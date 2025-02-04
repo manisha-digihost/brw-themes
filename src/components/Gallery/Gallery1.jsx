@@ -10,7 +10,6 @@ import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-video.css";
 import "lightgallery/css/lg-thumbnail.css";
-import { Container, Row, Col } from "react-bootstrap";
 
 const Gallery1 = () => {
   const onInit = () => {
@@ -99,16 +98,18 @@ const Gallery1 = () => {
   ];
 
   return (
-    <section className="gallery section">
-      <Container>
-        <div className="text-center mb-5">
-          <span className="px-3 py-2 rounded-pill mb-2">Our Portfolio</span>
-          <h2 className="display-5 fw-bold mb-3">Capturing Moments</h2>
-          <p className="text-muted lead mx-auto" style={{ maxWidth: "700px" }}>
+    <section className="py-16">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <span className="inline-block px-3 py-2 rounded-full mb-2 bg-primary text-white">
+            Our Portfolio
+          </span>
+          <h2 className="text-4xl font-bold mb-3">Capturing Moments</h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Explore our collection of stunning photographs that tell compelling
             stories
           </p>
-        </div>   
+        </div>
 
         <LightGallery
           onInit={onInit}
@@ -117,41 +118,33 @@ const Gallery1 = () => {
           mode="lg-fade"
           download={false}
           counter={true}
-          elementClassNames="gallery-container row g-4"
+          elementClassNames="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {galleryImages.map((image) => (
-            <Col
-              lg={4}
+            <div
               key={image.id}
               className="gallery-item"
               data-src={image.fullSize}
             >
-              <div className="gallery-card position-relative overflow-hidden shadow-lg rounded">
+              <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
                   src={image.thumbnail}
                   alt={`Gallery image ${image.id}`}
-                  className="img-fluid w-100"
-                  style={{ height: "400px", objectFit: "cover" }}
+                  className="w-full h-[400px] object-cover"
                   loading="lazy"
                 />
-                <div
-                  className="gallery-overlay position-absolute start-0 top-0 w-100 h-100 d-flex flex-column justify-content-end p-4 text-white"
-                  style={{
-                    background:
-                      "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%)",
-                  }}
-                >
-                  <h3 className="h4 mb-2">
+                <div className="absolute inset-0 flex flex-col justify-end p-4 text-white bg-gradient-to-t from-black/70 to-transparent">
+                  <h3 className="text-xl font-semibold mb-2">
                     {image.caption || `Beautiful Scene ${image.id}`}
                   </h3>
-                  <p className="mb-0 text-light-alt">{image.description}</p>
+                  <p className="text-gray-200 mb-0">{image.description}</p>
                   <small className="mt-2">Click to view full size</small>
                 </div>
               </div>
-            </Col>
+            </div>
           ))}
         </LightGallery>
-      </Container>
+      </div>
     </section>
   );
 };

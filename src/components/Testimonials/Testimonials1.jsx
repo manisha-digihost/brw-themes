@@ -1,11 +1,8 @@
 import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Testimonials1 = () => {
   const testimonials = [
@@ -15,7 +12,7 @@ const Testimonials1 = () => {
       role: "Business Owner",
     },
     {
-      name: "Sarah Johnson", 
+      name: "Sarah Johnson",
       text: "I'm extremely satisfied with the professional and thorough service provided by Best-Rate. They helped me achieve my financial goals.",
       role: "Entrepreneur",
     },
@@ -27,19 +24,23 @@ const Testimonials1 = () => {
   ];
 
   return (
-    <section className="testimonials bg-light-alt section">
-      <Container>
-        <div className="text-center mb-5">
-          <span className="px-3 py-2 rounded-pill mb-2">Testimonials</span>
-          <h2 className="display-5 fw-bold mb-3">What Our Clients Say</h2>
-          <p className="text-muted lead mx-auto" style={{ maxWidth: "700px" }}>
+    <section className="bg-gray-100 py-20">
+      <div className="container mx-auto px-4">
+        <div className="mb-12 text-center">
+          <span className="mb-2 inline-block rounded-full bg-primary px-6 py-2 text-white">
+            Testimonials
+          </span>
+          <h2 className="mb-4 text-4xl font-bold md:text-5xl">
+            What Our Clients Say
+          </h2>
+          <p className="mx-auto max-w-2xl text-lg text-gray-600">
             Read what our valued clients have to say about their experience
             working with us
           </p>
         </div>
 
-        <Row className="justify-content-center">
-          <Col lg={8}>
+        <div className="flex justify-center">
+          <div className="w-full max-w-3xl">
             <Swiper
               modules={[Pagination, Autoplay]}
               spaceBetween={30}
@@ -53,23 +54,23 @@ const Testimonials1 = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <SwiperSlide key={index}>
-                  <div className="testimonial-card text-center p-4 bg-white shadow-sm rounded">
-                    <div className="testimonial-content">
-                      <p className="mb-4 text-dark">{testimonial.text}</p>
-                      <h4 className="mb-1">{testimonial.name}</h4>
-                      <p className="text-muted mb-0">{testimonial.role}</p>
+                  <div className="rounded-lg bg-white p-8 text-center shadow-md">
+                    <div>
+                      <p className="mb-6 text-gray-800">{testimonial.text}</p>
+                      <h4 className="mb-2 text-xl font-semibold">
+                        {testimonial.name}
+                      </h4>
+                      <p className="text-gray-600">{testimonial.role}</p>
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
 
 export default Testimonials1;
-
-
