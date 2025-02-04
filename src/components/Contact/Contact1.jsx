@@ -4,63 +4,52 @@ import { LuClock4 } from "react-icons/lu";
 
 const Contact1 = () => {
   return (
-    <section className="contact-section section bg-light-alt">
-      <div className="container">
-        {/* <div className="row justify-content-center text-center mb-5">
-          <div className="col-lg-6">
-            <span className="subtitle text-primary">Contact Us</span>
-            <h2 className="title">Let's Start a Conversation</h2>
-            <p className="text-muted">
-              Have questions? We're here to help and would love to hear from
-              you.
-            </p>
-          </div>
-        </div> */}
-
-        <div className="text-center mb-5">
-          <span className="px-3 py-2 rounded-pill mb-2">Contact Us</span>
-          <h2 className="display-5 fw-bold mb-3">Let's Start a Conversation</h2>
-          <p className="text-muted lead mx-auto" style={{ maxWidth: "700px" }}>
+    <section className="py-16 bg-gray-100">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <span className="inline-block px-4 py-2 rounded-full mb-2 bg-primary-100 text-primary-600">Contact Us</span>
+          <h2 className="text-4xl font-bold mb-3">Let's Start a Conversation</h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Have questions? We're here to help and would love to hear from
           </p>
         </div>
 
-        <div className="row align-items-stretch">
-          <div className="col-lg-4 mb-4 mb-lg-0">
-            <div className="contact-info h-100 bg-dark text-white p-4 rounded-3">
-              <h3 className="mb-4 text-white">Contact Information</h3>
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+            <div className="h-full bg-gray-900 text-white p-6 rounded-lg">
+              <h3 className="text-2xl font-bold mb-6 text-white">Contact Information</h3>
 
-              <div className="info-item d-flex mb-4">
-                <IoLocationSharp className="contact-icon me-3" size={24} />
+              <div className="flex mb-6">
+                <IoLocationSharp className="text-2xl mr-4 flex-shrink-0" />
                 <div>
-                  <h6 className="text-white mb-1">Our Location</h6>
-                  <p className="mb-0 text-light-alt">
+                  <h6 className="text-white font-semibold mb-1">Our Location</h6>
+                  <p className="text-gray-300">
                     3481 Melrose Place, Beverly Hills
                   </p>
                 </div>
               </div>
 
-              <div className="info-item d-flex mb-4">
-                <IoMail className="contact-icon me-3" size={24} />
+              <div className="flex mb-6">
+                <IoMail className="text-2xl mr-4 flex-shrink-0" />
                 <div>
-                  <h6 className="text-white mb-1">Email Address</h6>
-                  <p className="mb-0 text-light-alt">Info@example.com</p>
+                  <h6 className="text-white font-semibold mb-1">Email Address</h6>
+                  <p className="text-gray-300">Info@example.com</p>
                 </div>
               </div>
 
-              <div className="info-item d-flex mb-4">
-                <IoCall className="contact-icon me-3" size={24} />
+              <div className="flex mb-6">
+                <IoCall className="text-2xl mr-4 flex-shrink-0" />
                 <div>
-                  <h6 className="text-white mb-1">Phone Number</h6>
-                  <p className="mb-0 text-light-alt">(+1) 517 397 7100</p>
+                  <h6 className="text-white font-semibold mb-1">Phone Number</h6>
+                  <p className="text-gray-300">(+1) 517 397 7100</p>
                 </div>
               </div>
 
-              <div className="info-item d-flex">
-                <LuClock4 className="contact-icon me-3" size={24} />
+              <div className="flex">
+                <LuClock4 className="text-2xl mr-4 flex-shrink-0" />
                 <div>
-                  <h6 className="text-white mb-1">Working Hours</h6>
-                  <p className="mb-0 text-light-alt">
+                  <h6 className="text-white font-semibold mb-1">Working Hours</h6>
+                  <p className="text-gray-300">
                     Monday - Friday: 8:00 AM - 4:00 PM
                     <br />
                     Saturday: 10:00 AM - 2:00 PM
@@ -70,73 +59,54 @@ const Contact1 = () => {
             </div>
           </div>
 
-          <div className="col-lg-8">
-            <div className="contact-form bg-white p-4 rounded-3 shadow">
-              <h3 className="mb-4">Send us a Message</h3>
+          <div className="w-full lg:w-2/3 px-4">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
               <form name="contactForm" method="post" action="contact.php">
-                <div className="row g-4">
-                  <div className="col-md-6">
-                    <div className="form-floating">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="name"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                      />
-                      <label htmlFor="name">Your Name</label>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="relative">
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                    />
                   </div>
-                  <div className="col-md-6">
-                    <div className="form-floating">
-                      <input
-                        type="email"
-                        className="form-control"
-                        id="email"
-                        name="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                      <label htmlFor="email">Your Email</label>
-                    </div>
+                  <div className="relative">
+                    <input
+                      type="email"
+                      className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      id="email"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
                   </div>
-                  <div className="col-12">
-                    <div className="form-floating">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="subject"
-                        name="subject"
-                        placeholder="Subject"
-                        required
-                      />
-                      <label htmlFor="subject">Subject</label>
-                    </div>
+                  <div className="relative col-span-full">
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject"
+                      required
+                    />
                   </div>
-                  <div className="col-12">
-                    <div className="form-floating">
-                      <textarea
-                        className="form-control"
-                        id="message"
-                        name="message"
-                        placeholder="Your Message"
-                        style={{ height: "150px" }}
-                        required
-                      ></textarea>
-                      <label htmlFor="message">Your Message</label>
-                    </div>
+                  <div className="relative col-span-full">
+                    <textarea
+                      className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 h-40"
+                      id="message"
+                      name="message"
+                      placeholder="Your Message"
+                      required
+                    ></textarea>
                   </div>
-                  <div className="col-12">
-                    {/* <button
-                      type="submit"
-                      className="btn btn-primary btn-lg px-5"
-                    >
-                      Send Message
-                    </button> */}
+                  <div className="col-span-full">
                     <button
                       type="submit"
-                      className="btn btn-primary btn-lg rounded-pill px-5 hover-scale"
+                      className="px-8 py-3 bg-primary-600 text-white rounded-full text-lg font-semibold transform transition hover:scale-105"
                     >
                       Send Message
                     </button>

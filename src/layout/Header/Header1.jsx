@@ -1,56 +1,70 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header1 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary fixed-top py-3">
-      <Container>
-        <Navbar.Brand href="#home" className="fw-bold fs-3">
-          <span className="text-primary">Best</span> Rate
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto">
-            <Link to="#home" className="mx-2 nav-link">
-              Home
-            </Link>
-            <Link to="#about" className="mx-2 nav-link">
-              About
-            </Link>
-            <NavDropdown
-              title="Services"
-              id="basic-nav-dropdown"
-              className="mx-2"
-            >
-              <NavDropdown.Item href="#products">Products</NavDropdown.Item>
-              <NavDropdown.Item href="#testimonials">
-                Testimonials
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#gallery">Gallery</NavDropdown.Item>
-            </NavDropdown>
-            <Link to="#contact" className="mx-2 nav-link">
-              Contact
-            </Link>
-            {/* <Link to="/">Template</Link> */}
-            <Link to="/" className="mx-2 nav-link">
-              Template1
-            </Link>
-          </Nav>
-          <div className="d-flex">
-            {/* <button className="btn btn-primary rounded-pill px-4">
-              Get Started
-            </button> */}
-            <button className="btn btn-primary rounded-pill px-3 hover-scale">
+    <nav className="bg-white fixed top-0 left-0 right-0 py-3 shadow-md">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center">
+          <Link to="#home" className="text-2xl font-bold">
+            <span className="text-primary-600">Best</span> Rate
+          </Link>
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden focus:outline-none"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+            </svg>
+          </button>
+
+          <div className={`lg:flex items-center ${isOpen ? 'block' : 'hidden'}`}>
+            <div className="flex flex-col lg:flex-row lg:mx-auto">
+              <Link to="#home" className="px-3 py-2 hover:text-primary-600">
+                Home
+              </Link>
+              <Link to="#about" className="px-3 py-2 hover:text-primary-600">
+                About
+              </Link>
+              
+              <div className="relative group">
+                <button className="px-3 py-2 hover:text-primary-600 flex items-center">
+                  Services
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute hidden group-hover:block bg-white shadow-lg py-2 rounded-lg">
+                  <Link to="#products" className="block px-4 py-2 hover:bg-gray-100">
+                    Products
+                  </Link>
+                  <Link to="#testimonials" className="block px-4 py-2 hover:bg-gray-100">
+                    Testimonials
+                  </Link>
+                  <Link to="#gallery" className="block px-4 py-2 hover:bg-gray-100">
+                    Gallery
+                  </Link>
+                </div>
+              </div>
+
+              <Link to="#contact" className="px-3 py-2 hover:text-primary-600">
+                Contact
+              </Link>
+              <Link to="/" className="px-3 py-2 hover:text-primary-600">
+                Template1
+              </Link>
+            </div>
+
+            <button className="mt-4 lg:mt-0 px-6 py-2 bg-primary-600 text-white rounded-full transform transition hover:scale-105">
               Our Services
             </button>
           </div>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </div>
+      </div>
+    </nav>
   );
 };
 
