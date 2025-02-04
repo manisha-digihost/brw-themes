@@ -24,7 +24,7 @@ const Products1 = () => {
   ];
 
   return (
-    <section className="bg-lightAlt py-20">
+    <section className="bg-light py-20">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <span className="mb-2 inline-block rounded-full bg-primary px-6 py-2 text-white">
