@@ -9,7 +9,7 @@ const Header1 = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="#home" className="text-2xl font-bold">
-            <span className="text-primary-600">Best</span> Rate
+            <span className="text-primary-600">Best</span>Rate
           </Link>
 
           <button
