@@ -15,9 +15,9 @@ const App = () => {
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<BaseTemplate />} />
-        {/* <Route path="/base-template-1" element={<Template1 />} />
+        <Route path="/base-template-1" element={<Template1 />} />
         <Route path="/base-template-2" element={<Template2 />} />
-        <Route path="/base-template-3" element={<Template3 />} />
+        {/* <Route path="/base-template-3" element={<Template3 />} />
         <Route path="/base-template-4" element={<Template4 />} />
         <Route path="/template-for-check" element={<TemplateForCheck />} />
         <Route path="/template-5" element={<Template5 />} />
