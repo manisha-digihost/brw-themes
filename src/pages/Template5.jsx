@@ -1,28 +1,28 @@
 import React from "react";
 import { ReactLenis, useLenis } from "lenis/react";
-import Header1 from "../layout/Header/Header1";
-import Footer1 from "../layout/Footer/Footer1";
-import About1 from "../components/About/About1";
-import Contact1 from "../components/Contact/Contact1";
-import Hero1 from "../components/Hero/Hero1";
-import USPS1 from "../components/USPS/USPS1";
-import Products1 from "../components/Products/Products1";
-import Testimonials1 from "../components/Testimonials/Testimonials1";
-import Gallery1 from "../components/Gallery/Gallery1";
+import Header5 from "../layout/Header/Header5";
+import Footer5 from "../layout/Footer/Footer5";
+import About5 from "../components/About/About5";
+import Contact5 from "../components/Contact/Contact5";
+import Hero5 from "../components/Hero/Hero5";
+import USPS5 from "../components/USPS/USPS5";
+import Products5 from "../components/Products/Products5";
+import Testimonials5 from "../components/Testimonials/Testimonials5";
+import Gallery5 from "../components/Gallery/Gallery5";
 
 const Template5 = () => {
   return (
     <ReactLenis root>
       <div>
-        <Header1 />
-        <Hero1 />
-        <USPS1 />
-        <About1 />
-        <Products1 />
-        <Testimonials1 />
-        <Gallery1 />
-        <Contact1 />
-        <Footer1 />
+        <Header5 />
+        <Hero5 />
+        <USPS5 />
+        <About5 />
+        <Products5 />
+        <Testimonials5 />
+        <Gallery5 />
+        <Contact5 />
+        <Footer5 />
       </div>
     </ReactLenis>
   );
