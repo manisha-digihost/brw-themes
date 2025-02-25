@@ -1,74 +1,121 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import videobanner from "./../../assets/images/video-bg.webp"
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+
+// import './styles.css';
+
+// import required modules
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 const Testimonials5 = () => {
   const testimonials = [
     {
-      name: "John Smith",
-      text: "Best-Rate has completely transformed how I manage my finances. Their expert guidance and personalized service made all the difference.",
-      role: "Business Owner",
+      text: "She were green under to multiply over teen stars seen livine second and whose blessed begining give from evening the saying light darkness give saying. about in sea given fly third abundantly must forgivide",
+      name: "Daniel Richard",
+      role: "CEO, Apple",
+      image: "https://randomuser.me/api/portraits/men/10.jpg",
     },
     {
-      name: "Sarah Johnson",
-      text: "I'm extremely satisfied with the professional and thorough service provided by Best-Rate. They helped me achieve my financial goals.",
-      role: "Entrepreneur",
+      text: "She were green under to multiply over teen stars seen livine second and whose blessed begining give from evening the saying light darkness give saying. about in sea given fly third abundantly must forgivide",
+      name: "Daniel Richard",
+      role: "CEO, Apple",
+      image: "https://randomuser.me/api/portraits/men/10.jpg",
     },
     {
-      name: "Michael Brown",
-      text: "The team at Best-Rate goes above and beyond. Their knowledge and dedication to client success is unmatched in the industry.",
-      role: "Real Estate Investor",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, suscipit. Laboriosam distinctio sunt ipsa? Rem perferendis assumenda laborum recusandae.",
+      name: "Emma Johnson",
+      role: "CTO, Microsoft",
+      image: "https://randomuser.me/api/portraits/men/20.jpg",
+    },
+    {
+      text: "Exercitationem atque accusantium repellendus alias laudantium nisi architecto obcaecati tempora quibusdam in cumque iste dolore, optio beatae.",
+      name: "James Brown",
+      role: "Lead Designer, Google",
+      image: "https://randomuser.me/api/portraits/men/20.jpg",
     },
   ];
+
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
 
   return (
     <section className="bg-gray-100 py-20">
       <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <span className="mb-2 inline-block rounded-full bg-primary px-6 py-2 text-white">
-            Testimonials
-          </span>
-          <h2 className="mb-4 text-4xl font-bold md:text-5xl">
-            What Our Clients Say
-          </h2>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600">
-            Read what our valued clients have to say about their experience
-            working with us
-          </p>
-        </div>
-
-        <div className="flex justify-center">
-          <div className="w-full max-w-3xl">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={30}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              className="testimonials-swiper"
-            >
-              {testimonials.map((testimonial, index) => (
-                <SwiperSlide key={index}>
-                  <div className="rounded-lg bg-white p-8 text-center shadow-md">
-                    <div>
-                      <p className="mb-6 text-gray-800">{testimonial.text}</p>
-                      <h4 className="mb-2 text-xl font-semibold">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-gray-600">{testimonial.role}</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="w-100">
+            <div className="mb-9">
+              <h2 className="text-5xl uppercase font-bold mb-2">Happy Client Says About our company</h2>
+              <span className="text-sm text-red-600 underline ">Some Standard Serivices</span>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-full max-w-3xl">
+                <Swiper
+                  onSwiper={setThumbsSwiper}
+                  spaceBetween={10}
+                  slidesPerView={3}
+                  freeMode={true}
+                  watchSlidesProgress={true}
+                  modules={[FreeMode, Navigation, Thumbs]}
+                  className="mySwiper mb-8"
+                  breakpoints={{
+                    320: { slidesPerView: 1, spaceBetween: 10 }, // Mobile: 1 slide
+                    768: { slidesPerView: 2, spaceBetween: 20 }, // Tablet: 2 slides
+                    1024: { slidesPerView: 3, spaceBetween: 30 }, // Desktop: 3 slides
+                  }}
+                >
+                  {
+                    testimonials.map((item1) => (
+                      <SwiperSlide>
+                        <img className="rounded-full" src={item1.image} />
+                      </SwiperSlide>
+                    ))
+                  }
+                </Swiper>
+                <Swiper
+                  style={{
+                    '--swiper-navigation-color': '#fff',
+                    '--swiper-pagination-color': '#fff',
+                  }}
+                  spaceBetween={10}
+                  navigation={false}
+                  thumbs={{ swiper: thumbsSwiper }}
+                  modules={[FreeMode, Navigation, Thumbs]}
+                  className="mySwiper2"
+                >
+                  {
+                    testimonials.map((item) => (
+                      <SwiperSlide>
+                        <div className="">
+                          <p className="mb-6">
+                            {item.text}
+                          </p>
+                          <div className="">
+                            <h5 className="text-lg font-bold">{item.name}</h5>
+                            <span className="text-sm">{item.role}</span>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))
+                  }
+                </Swiper>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <figure>
+              <img className="rounded-tl-[23vw]" src={videobanner} alt="" />
+            </figure>
           </div>
         </div>
+
       </div>
+
     </section>
   );
 };

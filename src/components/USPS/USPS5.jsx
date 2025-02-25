@@ -3,94 +3,53 @@ import { FaAward, FaClock, FaHeadset } from "react-icons/fa";
 
 const USPS5 = () => {
   return (
-    <section className="usps section bg-light-alt">
-      <div className="container">
-        <div
-          className="text-center mb-5"
-          data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-        >
-          <span className="px-3 py-2 rounded-pill bg-primary text-white mb-2 d-inline-block">
-            Our Benefits
-          </span>
-          <h2 className="display-5 fw-bold mb-3">Why Choose Us</h2>
-          <p className="text-muted lead mx-auto" style={{ maxWidth: "700px" }}>
-            We deliver exceptional service with industry-leading expertise
+    <section className="py-16 bg-white">
+    <div className="max-w-6xl mx-auto px-6">
+      <div className="grid md:grid-cols-3 gap-0">
+        {/* First Card */}
+        <div className=" p-8   text-left hover:bg-blue-50 rounded-br-xl overflow-hidden">
+          <div className="relative inline-block mb-8">
+            <div className="relative z-10  bg-red-500 text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl shadow-lg">
+              <FaClock />
+            </div>
+            <div className="absolute translate-y-6 -translate-x-1 -top-4 -left-0 z w-full h-full border border-red-300 rounded-full "></div>
+          </div>
+          <h3 className="text-xl font-semibold mt-6 mb-8">Modern design</h3>
+          <p className="text-gray-500 mt-3 leading-8">
+            Said be brought bel also fills kind face creepth gathired their sine good under is beast.
           </p>
         </div>
 
-        <div className="row g-4">
-          <div className="col-md-4">
-            <div
-              className="card border-0 shadow-sm h-100 hover-translate"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
-              <div className="card-body p-4">
-                <div className="text-primary mb-4">
-                  <FaAward size={42} />
-                </div>
-                <h3 className="h4 mb-3">Quality Service</h3>
-                <p className="text-muted mb-0">
-                  We pride ourselves on delivering exceptional quality in
-                  everything we do, ensuring your complete satisfaction.
-                </p>
-              </div>
+        {/* Second Card */}
+        <div className="p-8  text-left hover:bg-blue-50 rounded-br-xl overflow-hidden">
+          <div className="relative inline-block mb-8">
+            <div className=" relative z-10 bg-green-500 text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl shadow-lg">
+              <FaAward />
             </div>
+            <div className="absolute translate-y-6 -translate-x-1 -top-4 -left-0 z w-full h-full border border-green-300 rounded-full  "></div>
           </div>
+          <h3 className="text-xl font-semibold mt-6 mb-8">Expert Employee</h3>
+          <p className="text-gray-500 mt-3 leading-8">
+            Said be brought bel also fills kind face creepth gathired their sine good under is beast.
+          </p>
+        </div>
 
-          <div className="col-md-4">
-            <div
-              className="card border-0 shadow-sm h-100 hover-translate"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
-              <div className="card-body p-4">
-                <div className="text-primary mb-4">
-                  <FaClock size={42} />
-                </div>
-                <h3 className="h4 mb-3">Fast Delivery</h3>
-                <p className="text-muted mb-0">
-                  Quick turnaround times without compromising on quality. We
-                  value your time as much as you do.
-                </p>
-              </div>
+        {/* Third Card */}
+        <div className="p-8   text-left hover:bg-blue-50 rounded-br-xl overflow-hidden">
+          <div className="relative inline-block mb-8">
+            <div className="relative z-10 bg-blue-500 text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl shadow-lg">
+              <FaHeadset />
             </div>
+            <div className="absolute translate-y-6 -translate-x-1 -top-4 -left-0 z w-full h-full border border-blue-300 rounded-full "></div>
           </div>
-
-          <div className="col-md-4">
-            <div
-              className="card border-0 shadow-sm h-100 hover-translate"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
-              <div className="card-body p-4">
-                <div className="text-primary mb-4">
-                  <FaHeadset size={42} />
-                </div>
-                <h3 className="h4 mb-3">24/7 Support</h3>
-                <p className="text-muted mb-0">
-                  Our dedicated team is always here to help you succeed,
-                  providing round-the-clock assistance.
-                </p>
-              </div>
-            </div>
-          </div>
+          <h3 className="text-xl font-semibold mt-6 mb-8">Support Center</h3>
+          <p className="text-gray-500 mt-3 leading-8">
+            Said be brought bel also fills kind face creepth gathired their sine good under is beast.
+          </p>
         </div>
       </div>
-
-      <style jsx>{`
-        .hover-translate {
-          transition: transform 0.3s ease;
-        }
-        .hover-translate:hover {
-          transform: translateY(-10px);
-        }
-      `}</style>
-    </section>
+    </div>
+  </section>
   );
 };
 
