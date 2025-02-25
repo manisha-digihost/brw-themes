@@ -47,10 +47,10 @@ const Testimonials5 = () => {
   return (
     <section className="bg-gray-100 py-20">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="lg:grid md:grid-cols-2 gap-8 sm:block">
           <div className="w-100">
             <div className="mb-9">
-              <h2 className="text-5xl uppercase font-bold mb-2">Happy Client Says About our company</h2>
+              <h2 className="text-5xl   uppercase font-bold mb-2">Happy Client Says About our company</h2>
               <span className="text-sm text-red-600 underline ">Some Standard Serivices</span>
             </div>
             <div className="flex justify-center">
@@ -107,9 +107,9 @@ const Testimonials5 = () => {
               </div>
             </div>
           </div>
-          <div className="">
-            <figure>
-              <img className="rounded-tl-[23vw]" src={videobanner} alt="" />
+          <div className=" ">
+            <figure className="lg:mt-0 mt-8 block">
+              <img className="lg:rounded-tl-[23vw]" src={videobanner} alt="" />
             </figure>
           </div>
         </div>
