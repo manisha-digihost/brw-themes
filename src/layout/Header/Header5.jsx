@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo-tm-5.webp";
+import { FaPlus } from "react-icons/fa6";
+import { GoSearch } from "react-icons/go";
 
 const Header5 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white fixed top-0 left-0 right-0 py-3 shadow-md z-20">
+    <nav className="bg-transparent absolute top-0 left-0 right-0 py-3 z-20">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="#home" className="text-2xl font-bold">
-            <span className="text-primary-600">Best</span>Rate
+            <img src={logo} alt="Logo" />
           </Link>
 
           <button
@@ -32,20 +35,28 @@ const Header5 = () => {
           </button>
 
           <div
-            className={`lg:flex items-center ${isOpen ? "block" : "hidden"}`}
+            className={`lg:flex items-center justify-between w-full ${
+              isOpen ? "block" : "hidden"
+            }`}
           >
-            <div className="flex flex-col lg:flex-row lg:mx-auto">
-              <Link to="#home" className="px-3 py-2 hover:text-primary-600">
+            <div className="flex flex-col lg:flex-row lg:mx-auto gap-10">
+              <Link
+                to="#home"
+                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+              >
                 Home
               </Link>
-              <Link to="#about" className="px-3 py-2 hover:text-primary-600">
+              <Link
+                to="#about"
+                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+              >
                 About
               </Link>
 
               <div className="relative group">
-                <button className="px-3 py-2 hover:text-primary-600 flex items-center">
+                <button className="flex items-center gap-1 px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in">
                   Services
-                  <svg
+                  {/* <svg
                     className="w-4 h-4 ml-1"
                     fill="none"
                     stroke="currentColor"
@@ -57,7 +68,8 @@ const Header5 = () => {
                       strokeWidth={2}
                       d="M19 9l-7 7-7-7"
                     />
-                  </svg>
+                  </svg> */}
+                  <FaPlus />
                 </button>
                 <div className="absolute hidden group-hover:block bg-white shadow-lg py-2 rounded-lg">
                   <Link
@@ -81,17 +93,38 @@ const Header5 = () => {
                 </div>
               </div>
 
-              <Link to="#contact" className="px-3 py-2 hover:text-primary-600">
+              <Link
+                to="#contact"
+                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+              >
                 Contact
               </Link>
-              <Link to="/" className="px-3 py-2 hover:text-primary-600">
+              <Link
+                to="#contact"
+                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+              >
+                Gallery
+              </Link>
+              <Link
+                to="/"
+                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+              >
                 Template1
               </Link>
             </div>
 
-            <button className="mt-4 lg:mt-0 px-6 py-2 bg-primary-600 text-white rounded-full transform transition hover:scale-105">
-              Our Services
-            </button>
+            <div className="end-links">
+              <div className="flex gap-8 items-center">
+                <Link to="#" className="text-2xl">
+                  <GoSearch />
+                </Link>
+                <Link to="#" className="flex flex-col gap-[6px] text-2xl">
+                  <span className="w-[2rem] block h-[3px] bg-black"></span>
+                  <span className="w-[1.2rem] block h-[2px] bg-black"></span>
+                  <span className="w-[1.7rem] block h-[3px] bg-black"></span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
