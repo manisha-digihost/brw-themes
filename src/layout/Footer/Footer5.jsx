@@ -6,19 +6,26 @@ import { IoCall } from "react-icons/io5";
 
 const Footer5 = () => {
   return (
-    <footer className="bg-dark py-20 text-white">
+    <footer className="bg-black py-20 text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Company Info */}
           <div>
-            <h5 className="mb-3 text-xl font-semibold text-white">
-              Best Rate Website
-            </h5>
-            <p className="mb-4 text-white">
-              Providing quality digital solutions and exceptional service to
-              help your business grow online.
-            </p>
-            <div className="flex space-x-4">
+          
+            <h3 className="mb-7 text-4xl font-semibold text-white">
+            Have any project <br />
+            on your mind?
+            </h3>
+            <div className="mb-5 flex items-center text-white">
+              <IoMdMail className="mr-2" />
+              <span>info@bestratewebsite.com</span>
+            </div>
+            <div className="mb-5 flex items-center text-white">
+              <IoCall className="mr-2" />
+              <span>+1 (555) 123-4567</span>
+            </div>
+        
+            <div className="flex space-x-7">
               <a href="#" className="text-white hover:text-gray-300">
                 <FaFacebookF />
               </a>
@@ -65,29 +72,15 @@ const Footer5 = () => {
 
           {/* Contact Info */}
           <div>
-            <h5 className="mb-3 text-xl font-semibold text-white">
-              Contact Us
-            </h5>
-            <div className="mb-3 flex items-center text-white">
-              <IoMdMail className="mr-2" />
-              <span>info@bestratewebsite.com</span>
-            </div>
-            <div className="mb-3 flex items-center text-white">
-              <IoCall className="mr-2" />
-              <span>+1 (555) 123-4567</span>
-            </div>
-            <address className="text-white">
-              123 Business Street
-              <br />
-              New York, NY 10001
-              <br />
-              United States
-            </address>
+          <h3 className="mt-7 mb-3 text-4xl font-semibold text-white">
+            Best Rate <br /> Website
+            </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, consequatur.</p>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 border-t border-gray-700 pt-8 text-center">
+        <div className="mt-8 border-t border-gray-700 pt-8 text-left">
           <p className="text-white">
             © {new Date().getFullYear()} Best Rate Website. All rights reserved.
           </p>

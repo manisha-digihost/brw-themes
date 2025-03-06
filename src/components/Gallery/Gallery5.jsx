@@ -38,7 +38,7 @@ const Gallery5 = () => {
               key={filter}
               onClick={() => setCategory(filter)}
               className={`px-4 py-2 rounded-full transition 
-                ${category === filter ? "bg-red text-white" : "bg-gray-200 hover:bg-denger hover:text-white"}`}
+                ${category === filter ? "bg-red text-black bg-gray-200" : "border hover:bg-denger hover:text-black"}`}
             >
               {filter.charAt(0).toUpperCase() + filter.slice(1)}
             </button>
@@ -51,7 +51,7 @@ const Gallery5 = () => {
             <div key={image.id} className="relative overflow-hidden rounded-lg">
               <img 
                 src={image.thumbnail} 
-                alt="Gallery" 
+                alt="Gallery"
                 className="w-full h-80 object-cover transition-transform transform hover:scale-105" 
               />
             </div>

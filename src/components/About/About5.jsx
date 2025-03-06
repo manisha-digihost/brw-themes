@@ -1,51 +1,69 @@
 import React from "react";
+import banner2 from "../../assets/images/banner52.webp";
+import { FaAward, FaClock, FaHeadset } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const About5 = () => {
   return (
-    <section className="py-20 bg-gray-100">
-      <div className="container mx-auto px-4">
+    <section className="py-0 ">
+      <div className=" mx-auto ">
         <div className="flex flex-wrap items-center">
-          <div className="w-full lg:w-5/12">
+          <div className="w-full lg:w-6/12">
             <div className="pr-0 lg:pr-10 mb-8 lg:mb-0">
-              <span className="text-primary-600 font-semibold mb-4 inline-block">
-                About Us
-              </span>
-              <h2 className="text-4xl font-bold mb-6">About Best-Rate</h2>
-              <p className="mb-6">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
-                fugiat porro quas ducimus quis molestiae perferendis facere sit.
-                Dignissimos laboriosam quam sunt modi est harum reiciendis rem
-                blanditiis necessitatibus reprehenderit?
-              </p>
-              <div>
-                <button className="bg-primary-600 text-white px-8 py-3 rounded-full transform transition hover:scale-105">
-                  Learn More
-                </button>
-              </div>
+             <div className="relative">
+                  <div className="overflow-hidden shadow-[0_0_12px_1px_#00000017] rounded-tr-[60%] border-white  border-r-0 h-[50rem] shadow-[0 0 12px 1px #00000017] ">
+                    <img
+                      src={banner2}
+                      className="w-full border h-full object-cover"
+                      alt="Hero"
+                    />
+                  </div>
+                  <div className={`absolute translate-y-6 -translate-x-1 top-7 p-5  flex items-center justify-center text-center align-center -right-0 z w-44 h-44 border-white-100 border-8 bg-green-600 rounded-full `}>
+                    <h3 className="text-2xl text-white font-bold">2024 ACHIVED PRIZE</h3>
+                  </div>
+                </div>
             </div>
           </div>
-          <div className="w-full lg:w-7/12">
-            <div className="relative mt-2">
-              <div className="rounded-lg overflow-hidden">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  className="w-full shadow-lg rounded-lg"
-                >
-                  <source
-                    src="https://cdn.pixabay.com/video/2023/01/13/146336-789093861_large.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+          <div className="w-full lg:w-6/12">
+            <div className="relative mt-2 pr-20">
+              <div className="">
+                <div className="mb-9">
+                  <h2 className="text-6xl uppercase font-bold mb-2">Solving your complex <br /> problem needs</h2>
+                  <span className="text-sm text-red-600 underline ">About our Agency</span>
+                </div>
+                <p className="text-gray-500 mt-3 leading-8">Form light bring of lights lights domin bion all beast hath biside bielding greater saying dry after very upon beginning he creed created meat stars does that good had moving seas doners over lights form light green gathering one.</p>
+
+                <div className=" p-8 flex justify-center  gap-x-5  text-left  rounded-br-xl overflow-hidden">
+                  <div className="relative inline-block h-fit  mb-5">
+                    <div className={`relative z-10  bg-red-500 text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl shadow-lg`}>
+                      <FaClock />
+                    </div>
+                    <div className={`absolute translate-y-6 -translate-x-1 -top-4 -left-0 z w-full h-full border border-red-300 rounded-full `}></div>
+                  </div>
+                  <div className="">
+                    <h3 className="text-xl font-semibold mb-0">Evolution of idea</h3>
+                    <p className="text-gray-500 mt-3 leading-8">
+                    Open saw male may seas light replenish is third all fruit fowl over saw bearing unto beginning every moved.
+                    </p>
+                  </div>
+                </div>
+                <div className=" p-8 flex justify-center  gap-x-5  text-left  rounded-br-xl overflow-hidden">
+                  <div className="relative inline-block h-fit  mb-5">
+                    <div className={`relative z-10  bg-green-600 text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl shadow-lg`}>
+                     <FaAward />
+                    </div>
+                    <div className={`absolute translate-y-6 -translate-x-1 -top-4 -left-0 z w-full h-full border border-green-300 rounded-full `}></div>
+                  </div>
+                  <div className="">
+                    <h3 className="text-xl font-semibold mb-0">Successfull project</h3>
+                    <p className="text-gray-500 mt-3 leading-8">
+                    Cattle void lesser above abundantly and face there blessed give gathering about in sea given fly third abundantly forgivide
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="absolute bottom-8 right-8 bg-primary-600 text-white p-6 rounded-full flex flex-col items-center justify-center shadow-lg min-w-[150px] min-h-[150px] md:min-w-[120px] md:min-h-[120px] sm:min-w-[100px] sm:min-h-[100px]">
-                <h3 className="text-4xl font-bold mb-0 md:text-3xl sm:text-2xl">
-                  15+
-                </h3>
-                <p className="text-center mb-0 sm:text-sm">Years Experience</p>
-              </div>
+           
             </div>
           </div>
         </div>
