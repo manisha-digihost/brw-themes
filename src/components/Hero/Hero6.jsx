@@ -1,5 +1,6 @@
 import React from "react";
-import banner from "../../assets/images/banner5.webp";
+import banner2 from "../../assets/images/thumb-1.png";
+import { Link } from "react-router-dom";
 
 const Hero6 = () => {
   const slides = [
@@ -27,28 +28,19 @@ const Hero6 = () => {
   ];
 
   return (
-    <div className="py-24 bg-[#edf1fa] relative">
-      <div className="">
+    <div className="py-24 pb-0 bg-[#07d9d6] relative">
+      <div className="px-8 pl-32">
         <div className="grid grid-cols-2 items-center">
-          <div className="pl-5 after:[''] after:absolute after:w-[100px] after:h-[100px] after:bg-[url('https://html.webtend.net/cantus/assets/img/shape/01.png')] after:bg-no-repeat after:top-[26%] after:left-5 before:[''] before:absolute before:w-[100px] before:h-[100px] before:bg-[url('https://html.webtend.net/cantus/assets/img/shape/04.png')] before:bg-no-repeat before:top-[22.5%] before:left-[40%]">
-            <h4 className="mb-6 text-gray-400 text-[27px] font-semibold border-b-[1px] border-gray-400 inline-block pb-0 leading-[1.2]">
-              Making your Brand
-            </h4>
-            <h2 className="text-black text-[100px] font-bold pb-0 uppercase line leading-[0.92] mb-16 mt-3">
-              Creating <br />{" "}
-              <span className="text-[55px] font-semibold normal-case me-6 border-b-[3px] border-black leading-[1] inline-block">
-                {" "}
-                Unique
-              </span>
-              Ideas
-            </h2>
-            <button className="base-tm5-button">Hire us Now</button>
+          <div className="">
+            <h2 className="text-7xl mb-6 text-white leading-none font-semibold">Expert medical care and treatment</h2>
+            <p className="text-xl text-white">The ourselves suffering the sincerity. Inhabit her manners adapted age certain. Debating offended at branched.</p>
+            <Link className="bg-white py-3 transition-all ease-in-out px-8 text-base block hover:bg-black hover:text-white w-fit rounded-3xl mt-6">Contact Us</Link>
           </div>
-          <div className="ps-14 relative">
-            <div className="overflow-hidden shadow-[0_0_12px_1px_#00000017] rounded-tl-[65%] border-white border-[20px] border-r-0 h-[50rem] shadow-[0 0 12px 1px #00000017] after:[''] after:absolute after:w-[50%] after:h-[35%] after:bg-[url('https://html.webtend.net/cantus/assets/img/shape/03.png')] after:bg-no-repeat after:bottom-[0] after:left-[-5px]">
+          <div className="ps-14 relative h-100">
+            <div className={`flex justify-center   after:[''] after:absolute after:w-[100%] after:h-[100%] after:bg-[url('https://validthemes.net/site-template/medihub/assets/img/shape-2.png')] after:bg-no-repeat after:bottom-[0] after:left-[-5px]`}>
               <img
-                src={banner}
-                className="w-full border h-full object-cover"
+                src={banner2}
+                className=" h-screen object-contain relative z-10"
                 alt="Hero"
               />
             </div>

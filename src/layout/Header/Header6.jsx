@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo-tm-5.webp";
+import logo from "../../assets/images/theme6logo.png";
 import { FaPlus } from "react-icons/fa6";
 import { GoSearch } from "react-icons/go";
 
@@ -8,7 +8,7 @@ const Header6 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-transparent absolute top-0 left-0 right-0 py-3 z-20">
+    <nav className="bg-white absolute top-0 left-0 right-0 py-3 z-20">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="#home" className="text-2xl font-bold">
@@ -42,19 +42,19 @@ const Header6 = () => {
             <div className="flex flex-col lg:flex-row lg:mx-auto gap-10">
               <Link
                 to="#home"
-                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+                className="px-3 py-2 text-black font-semibold hover:text-[#07d9d6]  text-[15px] transition-all duration-300 ease-in"
               >
                 Home
               </Link>
               <Link
                 to="#about"
-                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+                className="px-3 py-2 text-black font-semibold hover:text-[#07d9d6]  text-[15px] transition-all duration-300 ease-in"
               >
                 About
               </Link>
 
               <div className="relative group">
-                <button className="flex items-center gap-1 px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in">
+                <button className="flex items-center gap-1 px-3 py-2 text-black font-semibold hover:text-[#07d9d6]  text-[15px] transition-all duration-300 ease-in">
                   Services
                   {/* <svg
                     className="w-4 h-4 ml-1"
@@ -95,19 +95,19 @@ const Header6 = () => {
 
               <Link
                 to="#contact"
-                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+                className="px-3 py-2 text-black font-semibold hover:text-[#07d9d6]  text-[15px] transition-all duration-300 ease-in"
               >
                 Contact
               </Link>
               <Link
                 to="#contact"
-                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+                className="px-3 py-2 text-black font-semibold hover:text-[#07d9d6]  text-[15px] transition-all duration-300 ease-in"
               >
                 Gallery
               </Link>
               <Link
                 to="/"
-                className="px-3 py-2 text-black font-semibold hover:text-red-600 text-[15px] transition-all duration-300 ease-in"
+                className="px-3 py-2 text-black font-semibold hover:text-[#07d9d6]  text-[15px] transition-all duration-300 ease-in"
               >
                 Template1
               </Link>
