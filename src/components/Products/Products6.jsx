@@ -29,26 +29,31 @@ const Products6 = () => {
     <section className="py-16 bg-white">
       
       <div className="max-w-6xl mx-auto px-6">
-      <div className="mb-9">
-          <h2 className="text-5xl uppercase font-bold mb-2">innovation starts here</h2>
-          <span className="text-sm text-red-600 underline ">Some Standard Serivices</span>
+        <div className="mb-9 max-w-4xl mx-auto text-center">
+          <h2 className="text-5xl uppercase font-bold mb-2">Centres of <span className=" text-center text-[#07d9d6]">Excellence</span></h2>
+          <span className="text-sm text-black-600  ">While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old</span>
         </div>
       <div className="grid md:grid-cols-3 gap-8">
         {/* First Card */}
         {
           productlist.map((item,index)=>(
-            <div className=" p-8  bg-blue-50 text-left hover:bg-green-50 rounded-br-xl overflow-hidden">
-              <div className="relative inline-block mb-8">
-                <div className={`relative z-10  bg-${item.color}-500 text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl shadow-lg`}>
+            <div className=" p-8  bg-blue-50 text-center transition duration-150 ease-linear group rounded-xl overflow-hidden relative">
+              <div className="absolute h-2 w-full left-0 transition duration-150 ease-linear group-hover:h-full top-0 bg-[#0cb8b6]"></div>
+             <div className="relative z-1">
+             <h3 className="text-xl text-black transition duration-150 ease-linear group-hover:text-white font-semibold mt-6 mb-8">{item.title}</h3>
+              <div className="relative inline-block mb-8 border-[#0cb8b6] transition duration-150 ease-linear group-hover:border-white border p-1 rounded-full">
+                <div className="relative z-10   bg-[#0cb8b6] transition duration-150 ease-linear group-hover:bg-white group-hover:text-[#0cb8b6] text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl shadow-lg">
                   {item.icon}
                 </div>
-                <div className={`absolute translate-y-6 -translate-x-1 -top-4 -left-0 z w-full h-full border border-${item.color}-300 rounded-full `}></div>
+                {/* <div className={`absolute translate-y-6 -translate-x-1 -top-4 -left-0 z w-full h-full border border-${item.color}-300 rounded-full `}></div> */}
               </div>
-              <h3 className="text-xl font-semibold mt-6 mb-8">{item.title}</h3>
-              <p className="text-gray-500 mt-3 leading-8">
+              <p className="text-gray-500  transition duration-150 ease-linear group-hover:text-white mt-3 leading-8">
                {item.disl}
               </p>
-              <Link className="flex items-center mt-6 mb-6">read more <FaLongArrowAltRight  className="mx-3"/></Link>
+              <div className="justify-center flex ">
+               <Link className="text-black transition duration-150 ease-linear group-hover:text-white group-hover:border-white  py-3 transition-all ease-in-out px-8 border-[#0cb8b6] border flex a hover:bg-[#0cb8b6] hover:text-white w-fit rounded-3xl mt-6">Read More</Link>
+              </div>
+             </div>
             </div>
           ))
         }
