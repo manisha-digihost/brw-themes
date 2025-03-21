@@ -59,3 +59,45 @@ body {
 .base-tm5-button:hover {
   background: #16ad44;
 }
+
+.bs5-heading {
+  display: inline-block;
+  font-weight: 600;
+  padding-bottom: 10px;
+  position: relative;
+  font-size: 50px;
+  color: #04000b;
+}
+.bs5-heading span {
+  color: #0cb8b6;
+}
+
+.bs5-heading::before {
+  content: "";
+  background: #0cb8b6;
+  bottom: 0;
+  height: 2px;
+  left: 50%;
+  margin-left: 20px;
+  position: absolute;
+  width: 5px;
+}
+
+.bs5-heading::after {
+  content: "";
+  background: #0cb8b6;
+  bottom: 0;
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+}
+.bs5-heading-sec p {
+  color: #666666;
+  text-transform: none;
+  font-weight: 400;
+  /* font-family: var(--font-default); */
+  line-height: 1.8;
+  margin-top: 25px;
+}
