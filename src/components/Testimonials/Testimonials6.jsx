@@ -27,7 +27,7 @@ const Testimonials6 = () => {
   return (
     <section className="bg-gray-100 py-20">
       <div className="container mx-auto px-4">
-        <div className="w-[65%] mx-auto">
+        <div className="lg:w-[65%] mx-auto">
           <div className="text-center bs5-heading-sec">
             <h2 className="bs5-heading">
               Patient <span>Testimonials</span>
@@ -66,7 +66,7 @@ const Testimonials6 = () => {
             <div className="absolute top-[18px] left-[110px] text-5xl text-[#0cb8b6]">
               <FaQuoteLeft />
             </div>
-            <div className="card p-20 border rounded-3xl">
+            <div className="card lg:p-20 border rounded-3xl md:p-7 p-5">
               <p className="text-[#666666] text-[18px]">
                 Departure so attention pronounce satisfied daughters am. But shy
                 tedious pressed studied opinion entered windows off. Advantage
@@ -96,7 +96,7 @@ const Testimonials6 = () => {
             <div className="absolute top-[18px] left-[110px] text-5xl text-[#0cb8b6]">
               <FaQuoteLeft />
             </div>
-            <div className="card p-20 border rounded-3xl">
+            <div className="card lg:p-20 border rounded-3xl md:p-7 p-5">
               <p className="text-[#666666] text-[18px]">
                 Departure so attention pronounce satisfied daughters am. But shy
                 tedious pressed studied opinion entered windows off. Advantage
@@ -126,7 +126,7 @@ const Testimonials6 = () => {
             <div className="absolute top-[18px] left-[110px] text-5xl text-[#0cb8b6]">
               <FaQuoteLeft />
             </div>
-            <div className="card p-20 border rounded-3xl">
+            <div className="card lg:p-20 border rounded-3xl md:p-7 p-5">
               <p className="text-[#666666] text-[18px]">
                 Departure so attention pronounce satisfied daughters am. But shy
                 tedious pressed studied opinion entered windows off. Advantage
@@ -156,7 +156,7 @@ const Testimonials6 = () => {
             <div className="absolute top-[18px] left-[110px] text-5xl text-[#0cb8b6]">
               <FaQuoteLeft />
             </div>
-            <div className="card p-20 border rounded-3xl">
+            <div className="card lg:p-20 border rounded-3xl md:p-7 p-5">
               <p className="text-[#666666] text-[18px]">
                 Departure so attention pronounce satisfied daughters am. But shy
                 tedious pressed studied opinion entered windows off. Advantage

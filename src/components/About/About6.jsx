@@ -12,8 +12,8 @@ const About6 = () => {
         <div className="flex flex-wrap">
           <div className="w-full lg:w-6/12">
             <div className="pr-0 lg:pr-10 mb-8 lg:mb-0">
-             <div className="relative flex justify-end">
-                  <div className="overflow-hidden ml-8 w-[70%]  shadow-[0_0_12px_1px_#00000017]   ">
+             <div className="relative flex md:justify-end sm:justify-center">
+                  <div className="overflow-hidden lg:ml-8 px-6 lg:w-[70%] w-100 shadow-[0_0_12px_1px_#00000017]   ">
                     <img
                       src={banner3}
                       className=" object-cover relative z-10"
@@ -27,7 +27,7 @@ const About6 = () => {
             </div>
           </div>
           <div className="w-full lg:w-6/12">
-            <div className="relative mt-2 pr-20">
+            <div className="relative mt-12 lg:pr-20 md:pr-0 md:px-6 md:mt-5 px-10 pr-0">
               <div className="">
                 <div className="mt-2">
                  <h3 className="text-4xl">Diagnosing and treating cance</h3>
