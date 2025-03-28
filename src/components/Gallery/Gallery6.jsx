@@ -6,7 +6,7 @@ import img4 from "./../../assets/images/gallery/gallery4.webp";
 import img5 from "./../../assets/images/gallery/gallery5.webp";
 import img7 from "./../../assets/images/gallery/gallery7.webp";
 
-const Gallery6 = () => {
+const Gallery5 = () => {
   const [category, setCategory] = useState("all");
 
   const galleryImages = [
@@ -28,11 +28,15 @@ const Gallery6 = () => {
       <div className="container mx-auto px-4">
         {/* Heading */}
         {/* <div className="mb-9 w-lg">
-              <h2 className="text-5xl  uppercase font-bold mb-2">Happy Client Says About our company</h2>
-              <span className="text-sm text-red-600 underline ">Some Standard Serivices</span>
-            </div> */}
-        <div className="w-[65%] mx-auto mb-10">
-          <div className="text-center bs5-heading-sec">
+          <h2 className="text-5xl  uppercase font-bold mb-2">
+            Happy Client Says About our company
+          </h2>
+          <span className="text-sm text-red-600 underline ">
+            Some Standard Serivices
+          </span>
+        </div> */}
+        <div className="w-[65%] mx-auto">
+          <div className="text-center bs5-heading-sec mb-10">
             <h2 className="bs5-heading">
               Our <span>Gallery</span>
             </h2>
@@ -43,32 +47,38 @@ const Gallery6 = () => {
             </p>
           </div>
         </div>
+
         {/* Filter Buttons */}
-        {/* <div className="flex justify-center space-x-3 mb-6">
-          {["all", "nature", "architecture", "animals"].map((filter) => (
-            <button
-              key={filter}
-              onClick={() => setCategory(filter)}
-              className={`px-4 py-2 rounded-full transition active:bg-red-500                                                   
+        <div className="text-center">
+          <div className="inline-block mx-auto space-x-3 mb-6 border-[1px] border-[#e7e7e7] p-5">
+            {["all", "nature", "architecture", "animals"].map((filter) => (
+              <button
+                key={filter}
+                onClick={() => setCategory(filter)}
+                className={`px-8 rounded-full transition 
                 ${
                   category === filter
-                    ? "bg-red text-black bg-gray-200"
-                    : "border hover:bg-denger hover:text-black"
+                    ? "bg-red text-[#0cb8b6] text-[17px] uppercase font-medium after:content-[''] relative after:absolute after:left-1/2 after:top-[0] after:h-[100%] after:w-[2px] after:bg-[#0cb8b6] after:rotate-45 after:"
+                    : "hover:bg-denger hover:text-black text-[17px] uppercase font-medium"
                 }`}
-            >
-              {filter.charAt(0).toUpperCase() + filter.slice(1)}
-            </button>
-          ))}
-        </div> */}
+              >
+                {filter.charAt(0).toUpperCase() + filter.slice(1)}
+              </button>
+            ))}
+          </div>
+        </div>
 
         {/* Image Gallery */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {filteredImages.map((image) => (
-            <div key={image.id} className="relative overflow-hidden rounded-lg">
+            <div
+              key={image.id}
+              className="relative overflow-hidden rounded-lg h-[25rem]"
+            >
               <img
                 src={image.thumbnail}
                 alt="Gallery"
-                className="w-full h-80 object-cover transition-transform transform hover:scale-105"
+                className="w-full h-100 object-cover object-center transition-transform transform hover:scale-105 duration-300 ease-in"
               />
             </div>
           ))}
@@ -78,4 +88,4 @@ const Gallery6 = () => {
   );
 };
 
-export default Gallery6;
+export default Gallery5;
