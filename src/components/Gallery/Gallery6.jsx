@@ -44,7 +44,7 @@ const Gallery6 = () => {
           </div>
         </div>
         {/* Filter Buttons */}
-        <div className="flex justify-center space-x-3 mb-6">
+        {/* <div className="flex justify-center space-x-3 mb-6">
           {["all", "nature", "architecture", "animals"].map((filter) => (
             <button
               key={filter}
@@ -59,7 +59,7 @@ const Gallery6 = () => {
               {filter.charAt(0).toUpperCase() + filter.slice(1)}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Image Gallery */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

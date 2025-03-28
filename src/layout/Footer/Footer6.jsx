@@ -8,9 +8,16 @@ const Footer6 = () => {
   return (
     <footer className="">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center pt-[100px]  pb-[100px]">
+        <div className="grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-1 pt-[100px]  pb-[100px]">
           <div className="sec1">
             <h2 className="relative pb-3  text-black text-2xl before:content-[''] before:absolute before:left-[33px] before:bottom-0 before:h-[2px] before:w-[5px] before:bg-blue-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-[30px] after:bg-blue-500">About</h2>
+            <p className="mt-5">Excellence decisively nay man yet impression for contrasted remarkably. There spoke.</p>
+          </div>
+          <div className="sec2">
+          <h2 className="relative pb-3  text-black text-2xl before:content-[''] before:absolute before:left-[33px] before:bottom-0 before:h-[2px] before:w-[5px] before:bg-blue-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-[30px] after:bg-blue-500">Usefull Link</h2>
+          </div>
+          <div className="sec2">
+          <h2 className="relative pb-3  text-black text-2xl before:content-[''] before:absolute before:left-[33px] before:bottom-0 before:h-[2px] before:w-[5px] before:bg-blue-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-[30px] after:bg-blue-500">Opening Hours</h2>
           </div>
         </div>
       </div>
