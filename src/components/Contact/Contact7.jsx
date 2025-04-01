@@ -6,7 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { IoIosPaperPlane } from "react-icons/io";
 
-const Contact6 = () => {
+const Contact7 = () => {
   return (
     <section className="py-16 bg-[#14457b]">
       <div className="container mx-auto px-4">
@@ -98,4 +98,4 @@ const Contact6 = () => {
   );
 };
 
-export default Contact6;
+export default Contact7;

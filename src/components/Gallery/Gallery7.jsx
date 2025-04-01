@@ -6,7 +6,7 @@ import img4 from "./../../assets/images/gallery/gallery4.webp";
 import img5 from "./../../assets/images/gallery/gallery5.webp";
 import img7 from "./../../assets/images/gallery/gallery7.webp";
 
-const Gallery5 = () => {
+const Gallery7 = () => {
   const [category, setCategory] = useState("all");
 
   const galleryImages = [
@@ -88,4 +88,4 @@ const Gallery5 = () => {
   );
 };
 
-export default Gallery5;
+export default Gallery7;
