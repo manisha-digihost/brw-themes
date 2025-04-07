@@ -101,3 +101,20 @@ body {
   line-height: 1.8;
   margin-top: 25px;
 }
+
+
+
+
+.bs7-button {
+  padding: 12px 40px;
+  background: #a6a182;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
