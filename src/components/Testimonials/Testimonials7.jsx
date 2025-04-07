@@ -25,18 +25,15 @@ const Testimonials7 = () => {
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="bg-[#1f2022] py-20">
       <div className="container mx-auto px-4">
         <div className="lg:w-[65%] mx-auto">
           <div className="text-center bs5-heading-sec">
-            <h2 className="bs5-heading">
-              Patient <span>Testimonials</span>
-            </h2>
-            <p>
-              While mirth large of on front. Ye he greater related adapted
-              proceed entered an. Through it examine express promise no. Past
-              add size game cold girl off how old
-            </p>
+          <h2 className="text-3xl text-white uppercase font-bold mb-2">
+          Where Inovation Meet <br />
+          Interior Design
+           
+          </h2>
           </div>
         </div>
         <Swiper
@@ -55,133 +52,158 @@ const Testimonials7 = () => {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               spaceBetween: 50,
             },
           }}
           // modules={[Pagination]}
           className="mySwiper mt-16"
         >
-          <SwiperSlide className="relative p-10">
-            <div className="absolute top-[18px] left-[110px] text-5xl text-[#0cb8b6]">
-              <FaQuoteLeft />
-            </div>
-            <div className="card lg:p-20 border rounded-3xl md:p-7 p-5">
-              <p className="text-[#666666] text-[18px]">
-                Departure so attention pronounce satisfied daughters am. But shy
-                tedious pressed studied opinion entered windows off. Advantage
-                dependent suspicion convinced provision him yet. Mr immediate
-                remaining conveying allowance do or.
-              </p>
-              <hr className="my-10" />
-              <div className="flex gap-5">
-                <div className="rounded-full overflow-hidden w-[60px] h-[60px]">
+          <SwiperSlide className="relative p-8 border border-[#fff3]">
+          
+              <div className="flex gap-5 mb-3 ">
+                <div className=" w-[60px] h-[60px]">
                   <img
                     src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
                     alt="Person"
                   />
                 </div>
                 <div className="">
-                  <h4 className="text-[#04000b] text-[22px] mb-1">
+                  <h4 className="text-[#fff] text-[22px] mb-1">
                     John Abraham
                   </h4>
-                  <h5 className="text-[#666666] uppercase">
-                    patient of <span className="text-[#0cb8b6]">surgery</span>
+                  <h5 className="text-[#fff] uppercase">
+                    patient of <span className="text-[#fff]">surgery</span>
                   </h5>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="relative p-10">
-            <div className="absolute top-[18px] left-[110px] text-5xl text-[#0cb8b6]">
-              <FaQuoteLeft />
-            </div>
-            <div className="card lg:p-20 border rounded-3xl md:p-7 p-5">
-              <p className="text-[#666666] text-[18px]">
+            
+            <div className="card lg:p-2  md:p-1 p-1">
+              <p className="text-[#aeb0b4] text-[16px]">
                 Departure so attention pronounce satisfied daughters am. But shy
                 tedious pressed studied opinion entered windows off. Advantage
                 dependent suspicion convinced provision him yet. Mr immediate
                 remaining conveying allowance do or.
               </p>
-              <hr className="my-10" />
-              <div className="flex gap-5">
-                <div className="rounded-full overflow-hidden w-[60px] h-[60px] ">
-                  <img
-                    src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                    alt="Person"
-                  />
-                </div>
-                <div className="">
-                  <h4 className="text-[#04000b] text-[22px] mb-1">
-                    John Abraham
-                  </h4>
-                  <h5 className="text-[#666666] uppercase">
-                    patient of <span className="text-[#0cb8b6]">surgery</span>
-                  </h5>
-                </div>
-              </div>
+             
             </div>
           </SwiperSlide>
-          <SwiperSlide className="relative p-10">
-            <div className="absolute top-[18px] left-[110px] text-5xl text-[#0cb8b6]">
-              <FaQuoteLeft />
+          <SwiperSlide className="relative p-8 border border-[#fff3]">
+          
+          <div className="flex gap-5 mb-3 ">
+            <div className=" w-[60px] h-[60px]">
+              <img
+                src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
+                alt="Person"
+              />
             </div>
-            <div className="card lg:p-20 border rounded-3xl md:p-7 p-5">
-              <p className="text-[#666666] text-[18px]">
-                Departure so attention pronounce satisfied daughters am. But shy
-                tedious pressed studied opinion entered windows off. Advantage
-                dependent suspicion convinced provision him yet. Mr immediate
-                remaining conveying allowance do or.
-              </p>
-              <hr className="my-10" />
-              <div className="flex gap-5">
-                <div className="rounded-full overflow-hidden w-[60px] h-[60px] ">
-                  <img
-                    src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                    alt="Person"
-                  />
-                </div>
-                <div className="">
-                  <h4 className="text-[#04000b] text-[22px] mb-1">
-                    John Abraham
-                  </h4>
-                  <h5 className="text-[#666666] uppercase">
-                    patient of <span className="text-[#0cb8b6]">surgery</span>
-                  </h5>
-                </div>
-              </div>
+            <div className="">
+              <h4 className="text-[#fff] text-[22px] mb-1">
+                John Abraham
+              </h4>
+              <h5 className="text-[#fff] uppercase">
+                patient of <span className="text-[#fff]">surgery</span>
+              </h5>
             </div>
-          </SwiperSlide>
-          <SwiperSlide className="relative p-10">
-            <div className="absolute top-[18px] left-[110px] text-5xl text-[#0cb8b6]">
-              <FaQuoteLeft />
+          </div>
+        
+        <div className="card lg:p-2  md:p-1 p-1">
+          <p className="text-[#aeb0b4] text-[16px]">
+            Departure so attention pronounce satisfied daughters am. But shy
+            tedious pressed studied opinion entered windows off. Advantage
+            dependent suspicion convinced provision him yet. Mr immediate
+            remaining conveying allowance do or.
+          </p>
+         
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="relative p-8 border border-[#fff3]">
+          
+          <div className="flex gap-5 mb-3 ">
+            <div className=" w-[60px] h-[60px]">
+              <img
+                src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
+                alt="Person"
+              />
             </div>
-            <div className="card lg:p-20 border rounded-3xl md:p-7 p-5">
-              <p className="text-[#666666] text-[18px]">
-                Departure so attention pronounce satisfied daughters am. But shy
-                tedious pressed studied opinion entered windows off. Advantage
-                dependent suspicion convinced provision him yet. Mr immediate
-                remaining conveying allowance do or.
-              </p>
-              <hr className="my-10" />
-              <div className="flex gap-5">
-                <div className="rounded-full overflow-hidden w-[60px] h-[60px] ">
-                  <img
-                    src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                    alt="Person"
-                  />
-                </div>
-                <div className="">
-                  <h4 className="text-[#04000b] text-[22px] mb-1">
-                    John Abraham
-                  </h4>
-                  <h5 className="text-[#666666] uppercase">
-                    patient of <span className="text-[#0cb8b6]">surgery</span>
-                  </h5>
-                </div>
-              </div>
+            <div className="">
+              <h4 className="text-[#fff] text-[22px] mb-1">
+                John Abraham
+              </h4>
+              <h5 className="text-[#fff] uppercase">
+                patient of <span className="text-[#fff]">surgery</span>
+              </h5>
             </div>
-          </SwiperSlide>
+          </div>
+        
+        <div className="card lg:p-2  md:p-1 p-1">
+          <p className="text-[#aeb0b4] text-[16px]">
+            Departure so attention pronounce satisfied daughters am. But shy
+            tedious pressed studied opinion entered windows off. Advantage
+            dependent suspicion convinced provision him yet. Mr immediate
+            remaining conveying allowance do or.
+          </p>
+         
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="relative p-8 border border-[#fff3]">
+          
+          <div className="flex gap-5 mb-3 ">
+            <div className=" w-[60px] h-[60px]">
+              <img
+                src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
+                alt="Person"
+              />
+            </div>
+            <div className="">
+              <h4 className="text-[#fff] text-[22px] mb-1">
+                John Abraham
+              </h4>
+              <h5 className="text-[#fff] uppercase">
+                patient of <span className="text-[#fff]">surgery</span>
+              </h5>
+            </div>
+          </div>
+        
+        <div className="card lg:p-2  md:p-1 p-1">
+          <p className="text-[#aeb0b4] text-[16px]">
+            Departure so attention pronounce satisfied daughters am. But shy
+            tedious pressed studied opinion entered windows off. Advantage
+            dependent suspicion convinced provision him yet. Mr immediate
+            remaining conveying allowance do or.
+          </p>
+         
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="relative p-8 border border-[#fff3]">
+          
+          <div className="flex gap-5 mb-3 ">
+            <div className=" w-[60px] h-[60px]">
+              <img
+                src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
+                alt="Person"
+              />
+            </div>
+            <div className="">
+              <h4 className="text-[#fff] text-[22px] mb-1">
+                John Abraham
+              </h4>
+              <h5 className="text-[#fff] uppercase">
+                patient of <span className="text-[#fff]">surgery</span>
+              </h5>
+            </div>
+          </div>
+        
+        <div className="card lg:p-2  md:p-1 p-1">
+          <p className="text-[#aeb0b4] text-[16px]">
+            Departure so attention pronounce satisfied daughters am. But shy
+            tedious pressed studied opinion entered windows off. Advantage
+            dependent suspicion convinced provision him yet. Mr immediate
+            remaining conveying allowance do or.
+          </p>
+         
+        </div>
+      </SwiperSlide>
         </Swiper>
       </div>
     </section>
