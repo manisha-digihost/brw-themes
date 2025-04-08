@@ -13,7 +13,7 @@ import Footer7 from "../layout/Footer/Footer7";
 const Template7 = () => {
   return (
     <ReactLenis root>
-      <div>
+      <div className="bg-[#1f2022] ">
         <Header7 />
         <Hero7 />
         <USPS7 />
