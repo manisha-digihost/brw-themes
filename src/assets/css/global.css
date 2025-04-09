@@ -102,12 +102,9 @@ body {
   margin-top: 25px;
 }
 
-
-
-
 .bs7-button {
-  padding: 12px 40px;
-  background: #a6a182;
+  padding: 18px 40px;
+  background: #ffffff;
   border: 0;
   outline: 0;
   color: #fff;
@@ -117,4 +114,49 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s all ease;
+}
+
+.bs7-button span {
+  position: relative;
+  z-index: 5;
+  transition: 0.5s all ease;
+}
+
+.bs7-button:hover span {
+  color: #000;
+}
+
+.bs7-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #a6a182;
+  width: 51%;
+  height: 100%;
+  transition: 0.5s all ease;
+}
+
+.bs7-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #a6a182;
+  width: 51%;
+  height: 100%;
+  transition: 0.5s all ease;
+}
+
+.bs7-button:hover::after {
+  height: 100%;
+  top: -100%;
+}
+
+.bs7-button:hover::before {
+  height: 100%;
+  bottom: -100%;
 }
