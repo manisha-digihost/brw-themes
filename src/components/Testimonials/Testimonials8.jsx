@@ -25,16 +25,13 @@ const Testimonials7 = () => {
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <section className="bg-[#1f2022] py-20">
-      <div className="container-fluid mx-auto px-10">
-        <div className="lg:w-[65%] mx-auto">
-          <div className="text-center bs5-heading-sec">
-            <h2 className="text-3xl text-white uppercase font-bold mb-2">
-              Where Inovation Meet <br />
-              Interior Design
-            </h2>
-          </div>
-        </div>
+    <section className="py-20 px-16 bg-[#fdf7ee]">
+      <div className="container-fluid mx-auto">
+        <div className="text-center">
+              <span className="text-lg text-[#FE704B] ">Testimonial</span>
+              <h2 className="text-4xl text-[#0B2239] font-600 mb-2">Our Customer Said<strong> About Pet Care</strong></h2>
+              <p className="text-[#555555]">Conveniently customize proactive services leveraged without <br /> continualliery aggregate fricctionle ou wellies</p>
+            </div>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -47,127 +44,158 @@ const Testimonials7 = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 1,
               spaceBetween: 50,
             },
           }}
           // modules={[Pagination]}
-          className="mySwiper mt-16"
-        >
+          className="mySwiper mt-8" >
           <SwiperSlide className="relative p-8 border border-[#fff3]">
-            <div className="flex gap-5 mb-3 ">
-              <div className=" w-[60px] h-[60px]">
-                <img
-                  src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                  alt="Person"
-                />
-              </div>
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8">
               <div className="">
-                <h4 className="text-[#fff] text-[22px] mb-1">John Abraham</h4>
-                <h5 className="text-[#fff] uppercase">
-                  patient of <span className="text-[#fff]">surgery</span>
-                </h5>
+                <figure>
+                  <img src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/03.jpg" alt="" />
+                </figure>
+              </div>
+              <div className="flex flex-col justify-center">
+                <div className=" gap-5 mb-3 ">
+                  <div className=" w-[60px] h-[60px]">
+                    <img
+                      src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/quote2.png"
+                      alt="Person"
+                    />
+                  </div>
+                
+                  </div>
+            
+             
+
+                <div className="card lg:p-2  md:p-1 p-1">
+                  <p className="text-[#555555] text-[16px]">
+                  Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
+                  </p>
+                </div>
+                <div className="flex gap-2 mt-5">
+                  <div className=" w-[60px] h-[60px]">
+                    <img
+                      src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
+                      alt="Person"
+                    />
+                  </div>
+                  <div className="">
+
+                    <h4 className="text-[#0B2239] text-[20px] font-[600] mb-1">John Abraham</h4>
+                    <h5 className="text-[#555555] uppercase">
+                      patient of <span className="text-[#fff]">surgery</span>
+                    </h5>
+                    
+                  </div>
+                </div>
+                
+                 
               </div>
             </div>
-
-            <div className="card lg:p-2  md:p-1 p-1">
-              <p className="text-[#aeb0b4] text-[16px]">
-                Departure so attention pronounce satisfied daughters am. But shy
-                tedious pressed studied opinion entered windows off.
-              </p>
-            </div>
+          
           </SwiperSlide>
           <SwiperSlide className="relative p-8 border border-[#fff3]">
-            <div className="flex gap-5 mb-3 ">
-              <div className=" w-[60px] h-[60px]">
-                <img
-                  src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                  alt="Person"
-                />
-              </div>
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8">
               <div className="">
-                <h4 className="text-[#fff] text-[22px] mb-1">John Abraham</h4>
-                <h5 className="text-[#fff] uppercase">
-                  patient of <span className="text-[#fff]">surgery</span>
-                </h5>
+                <figure>
+                  <img src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/03.jpg" alt="" />
+                </figure>
+              </div>
+              <div className="flex flex-col justify-center">
+                <div className=" gap-5 mb-3 ">
+                  <div className=" w-[60px] h-[60px]">
+                    <img
+                      src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/quote2.png"
+                      alt="Person"
+                    />
+                  </div>
+                
+                  </div>
+            
+             
+
+                <div className="card lg:p-2  md:p-1 p-1">
+                  <p className="text-[#555555] text-[16px]">
+                  Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
+                  </p>
+                </div>
+                <div className="flex gap-2 mt-5">
+                  <div className=" w-[60px] h-[60px]">
+                    <img
+                      src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
+                      alt="Person"
+                    />
+                  </div>
+                  <div className="">
+
+                    <h4 className="text-[#0B2239] text-[20px] font-[600] mb-1">John Abraham</h4>
+                    <h5 className="text-[#555555] uppercase">
+                      patient of <span className="text-[#fff]">surgery</span>
+                    </h5>
+                    
+                  </div>
+                </div>
+                
+                 
               </div>
             </div>
-
-            <div className="card lg:p-2  md:p-1 p-1">
-              <p className="text-[#aeb0b4] text-[16px]">
-                Departure so attention pronounce satisfied daughters am. But shy
-                tedious pressed studied opinion entered windows off.
-              </p>
-            </div>
+          
           </SwiperSlide>
           <SwiperSlide className="relative p-8 border border-[#fff3]">
-            <div className="flex gap-5 mb-3 ">
-              <div className=" w-[60px] h-[60px]">
-                <img
-                  src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                  alt="Person"
-                />
-              </div>
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8">
               <div className="">
-                <h4 className="text-[#fff] text-[22px] mb-1">John Abraham</h4>
-                <h5 className="text-[#fff] uppercase">
-                  patient of <span className="text-[#fff]">surgery</span>
-                </h5>
+                <figure>
+                  <img src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/03.jpg" alt="" />
+                </figure>
               </div>
-            </div>
+              <div className="flex flex-col justify-center">
+                <div className=" gap-5 mb-3 ">
+                  <div className=" w-[60px] h-[60px]">
+                    <img
+                      src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/quote2.png"
+                      alt="Person"
+                    />
+                  </div>
+                
+                  </div>
+            
+             
 
-            <div className="card lg:p-2  md:p-1 p-1">
-              <p className="text-[#aeb0b4] text-[16px]">
-                Departure so attention pronounce satisfied daughters am. But shy
-                tedious pressed studied opinion entered windows off.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="relative p-8 border border-[#fff3]">
-            <div className="flex gap-5 mb-3 ">
-              <div className=" w-[60px] h-[60px]">
-                <img
-                  src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                  alt="Person"
-                />
-              </div>
-              <div className="">
-                <h4 className="text-[#fff] text-[22px] mb-1">John Abraham</h4>
-                <h5 className="text-[#fff] uppercase">
-                  patient of <span className="text-[#fff]">surgery</span>
-                </h5>
-              </div>
-            </div>
+                <div className="card lg:p-2  md:p-1 p-1">
+                  <p className="text-[#555555] text-[16px]">
+                  Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
+                  </p>
+                </div>
+                <div className="flex gap-2 mt-5">
+                  <div className=" w-[60px] h-[60px]">
+                    <img
+                      src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
+                      alt="Person"
+                    />
+                  </div>
+                  <div className="">
 
-            <div className="card lg:p-2  md:p-1 p-1"></div>
-          </SwiperSlide>
-          <SwiperSlide className="relative p-8 border border-[#fff3]">
-            <div className="flex gap-5 mb-3 ">
-              <div className=" w-[60px] h-[60px]">
-                <img
-                  src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                  alt="Person"
-                />
-              </div>
-              <div className="">
-                <h4 className="text-[#fff] text-[22px] mb-1">John Abraham</h4>
-                <h5 className="text-[#fff] uppercase">
-                  patient of <span className="text-[#fff]">surgery</span>
-                </h5>
+                    <h4 className="text-[#0B2239] text-[20px] font-[600] mb-1">John Abraham</h4>
+                    <h5 className="text-[#555555] uppercase">
+                      patient of <span className="text-[#fff]">surgery</span>
+                    </h5>
+                    
+                  </div>
+                </div>
+                
+                 
               </div>
             </div>
-
-            <div className="card lg:p-2  md:p-1 p-1">
-              <p className="text-[#aeb0b4] text-[16px]">
-                Departure so attention pronounce satisfied daughters am. But shy
-                tedious pressed studied opinion entered windows off.
-              </p>
-            </div>
+          
           </SwiperSlide>
+         
         </Swiper>
       </div>
     </section>
