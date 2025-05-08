@@ -1,78 +1,47 @@
 import React from "react";
-import banner2 from "../../assets/images/thumb-1.png";
+import banner2 from "../../assets/images/02.png";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { GoArrowUpRight } from "react-icons/go";
+import { IoIosCall } from "react-icons/io";
 import { FaPlay } from "react-icons/fa";
 
 const Hero8 = () => {
-  const slides = [
-    {
-      title: "Dedicated Team Exceptional unique architecture Design Idea",
-      // description:
-      //   "Some representative placeholder content for the first slide of the carousel.",
-      buttonText: "More Details",
-      buttonLink: "#",
-      image: "src/assets/images/hero/1.jpg",
-    },
-    {
-      title: "Dedicated Team Exceptional unique architecture Design Idea",
-      // description:
-      //   "Some representative placeholder content for the second slide of the carousel.",
-      buttonText: "More Details",
-      buttonLink: "#",
-      image: "src/assets/images/hero/2.jpg",
-    },
-    {
-      title: "Dedicated Team Exceptional unique architecture Design Idea",
-      // description:
-      //   "Some representative placeholder content for the third slide of this carousel.",
-      buttonText: "More Details",
-      buttonLink: "#",
-      image: "src/assets/images/hero/1.jpg",
-    },
-  ];
-
+ 
   return (
-    <div className="relative h-screen mb-6">
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        // navigation
-        // pagination={{ clickable: true }}
-        autoplay={{ delay: 5000 }}
-        loop={true}
-        className="h-full"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="relative h-full bg-darkAlt after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-black after:opacity-[0.8]">
-              {/* <div className="rounded">
-                <FaPlay />
-              </div> */}
-              <div className="absolute inset-0">
-                <img src={slide.image} alt="Hero" />
-              </div>
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 w-[65%] mx-auto z-10 uppercase">
-                <h1 className="text-[3.9rem] font-bold mb-4 text-light">
-                  {slide.title}
-                </h1>
-                <a href={slide.buttonLink} className="bs7-button">
-                  <span>
-                    {slide.buttonText}
-                    <span className="text-[18px] ms-1 inline-block">
-                      <GoArrowUpRight />
-                    </span>
-                  </span>
-                </a>
-              </div>
+    <div className="bg-[#FFF3EF] h-[90vh] overflow-hidden">
+      <div className="ps-4 md:ps-[10rem] pt-7" >
+        <div className="flex flex-col md:flex-row justify-between items-center gap-10">
+          <div className="w-full md:w-1/2 flex flex-col gap-5">
+            <h1 className="text-[#1f2022] text-[3.5rem] leading-[4rem]">Treating Your Pet  <span className="text-[#1f2022] font-semibold text-[3.5rem] leading-[3.5rem]">By</span>
+               <br />
+
+              <span className="text-[#1f2022] font-semibold text-[3.5rem]">Our Professional</span><br />
+              Vets
+            </h1>
+            <p className="text-[#1f2022] font-normal text-[1rem]">
+              Haldaa is a platform that connects you with the best services in your area. Whether you need a plumber, electrician, or cleaner, we have you covered.
+            </p>
+            <div className="flex">
+              <Link to="#!" className="btn px-8 py-3 bg-[#FE704B] text-white rounded-md font-semibold text-[1rem] hover:bg-[#1f2022] hover:text-[#FFF3EF] transition duration-300 ease-in-out flex items-center gap-2">
+                Appointment Now
+              </Link>
+              <Link to="#!" className="btn px-8 py-3 bg-[#fff] text-[#FE704B] rounded-md font-semibold text-[1rem] hover:bg-[#1f2022] hover:text-[#FFF3EF] transition duration-300 ease-in-out flex items-center gap-2 ml-4">
+              <IoIosCall />
+
+                  (229) 555-0123
+              </Link>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+         
+          </div>
+          <div className="w-full md:w-1/2 flex justify-center h-[90vh]">
+            <img src={banner2} alt="Banner" className="w-full h-auto" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
