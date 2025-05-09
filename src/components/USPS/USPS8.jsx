@@ -8,7 +8,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 
 const USPS8 = () => {
   return (
-    <section className=" bg-[#fff] mb-6 px-4 md:px-[10rem]">
+    <section className="bg-[#fff] px-4 md:px-[10rem]">
       <div className="max-w-8xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-0">
           {/* First Card */}
@@ -16,9 +16,9 @@ const USPS8 = () => {
             <span className="text-4xl group-hover:bg-[#FE704B] transition-all rounded group-hover:text-white p-3 border border-1 border-[#FE704B] text-[#FE704B] border-dotted">
               <MdOutlineEngineering />
             </span>
-            <span className="text-[18px] font-medium text-dark uppercase ">
+            <span className="text-[18px] font-medium text-dark uppercase">
               360 Panorama & 3D
-            </span>
+            </span>   
           </div>
 
           {/* Second Card */}
