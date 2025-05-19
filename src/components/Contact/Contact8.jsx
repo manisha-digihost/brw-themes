@@ -11,130 +11,118 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Contact8 = () => {
   return (
-    <section id="contact" className="bg-black py-16">
-      <div className="container-fluid mx-10 px-10 py-20 bg-[#0e110d] rounded-[12px]">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          <div className="lg:col-span-5 space-y-8 bg-[#1f2022] py-16 px-10 rounded-[12px]">
-            <h2 className="text-light text-[28px] font-bold uppercase mb-8 border-b border-b-[#ffffff34] pb-3">
-              Contact Informatlon
-            </h2>
-            <div className="flex items-center space-x-4 bg-black p-5">
-              <div className="text-3xl text-black py-4 px-3 bg-[#a6a182]">
-                <IoLocationSharp />
-              </div>
-              <div>
-                <h4 className="text-[22px] font-medium text-light">Address</h4>
-                <p className="text-[15px] text-light">
-                  3481 Melrose Place, Beverly Hills
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4 bg-black p-5">
-              <div className="text-3xl text-black py-4 px-3 bg-[#a6a182]">
-                <IoCall />
-              </div>
-              <div>
-                <h4 className="text-[22px] font-medium text-light">
-                  Contact Number
-                </h4>
-                <p className="text-[15px] text-light">(+1) 517 397 7100</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4 bg-black p-5">
-              <div className="text-3xl text-black py-4 px-3 bg-[#a6a182]">
-                <IoMail />
-              </div>
-              <div>
-                <h4 className="text-[22px] font-medium text-light">Email Us</h4>
-                <a href="#!" className="text-[15px] text-light">
-                  example@gmail.com
-                </a>
-              </div>
-            </div>
+ <section id="contact" className="bg-[#fdf7ee] py-12 sm:py-16 lg:py-20">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-10">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      {/* Contact Info */}
+      <div className="lg:col-span-5 space-y-8 bg-[#fdf7ee] py-10 sm:py-12 px-6 sm:px-10 rounded-[12px] border border-[#e0d7cd]">
+        <h2 className="text-[#1f2022] text-2xl sm:text-3xl font-bold uppercase mb-6 border-b border-[#1f202234] pb-3">
+          Contact Information
+        </h2>
+
+        <div className="flex items-start space-x-4 bg-white p-4 sm:p-5 shadow-sm rounded-md">
+          <div className="text-2xl sm:text-3xl text-white p-3 bg-[#FE704B] rounded-md">
+            <IoLocationSharp />
           </div>
-          <div className="lg:col-span-7">
-            <div className="p-8 rounded-lg shadow-md pe-0">
-              <h2 className="text-light text-[35px] font-bold uppercase mb-8 border-b border-b-[#ffffff34] inline-block pb-3">
-                Get A Quote
-              </h2>
-              <form
-                className="space-y-4"
-                name="enq"
-                method="post"
-                action="contact.php"
-                onSubmit={() => validation()}
-              >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <input
-                      type="text"
-                      name="name"
-                      className="w-full px-6 py-4 rounded-[6px] focus:outline-none text-light bg-black"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      className="w-full px-6 py-4 rounded-[6px] focus:outline-none text-light bg-black"
-                      placeholder="Your Email"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      name="subject"
-                      className="w-full px-6 py-4 rounded-[6px] focus:outline-none text-light bg-black"
-                      placeholder="Mobile"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      name="subject"
-                      className="w-full px-6 py-4 rounded-[6px] focus:outline-none text-light bg-black"
-                      placeholder="Company"
-                      required
-                    />
-                  </div>
-                </div>
-                <div>
-                  <textarea
-                    rows="6"
-                    name="message"
-                    className="w-full px-6 py-4 rounded-[6px] focus:outline-none text-light bg-black"
-                    placeholder="Message"
-                    required
-                  ></textarea>
-                </div>
-                <div className="text-center">
-                  <button
-                    type="submit"
-                    value="Send message"
-                    name="submit"
-                    id="submitButton"
-                    className="bs7-button"
-                    title="Submit Your Message!"
-                  >
-                    <span>
-                      {" "}
-                      Message
-                      <span className="text-[18px] ms-1 inline-block">
-                        <GoArrowUpRight />
-                      </span>
-                    </span>
-                  </button>
-                </div>
-              </form>
-            </div>
+          <div>
+            <h4 className="text-lg sm:text-xl font-medium text-[#1f2022]">Address</h4>
+            <p className="text-sm sm:text-base text-[#1f2022]">
+              3481 Melrose Place, Beverly Hills
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-start space-x-4 bg-white p-4 sm:p-5 shadow-sm rounded-md">
+          <div className="text-2xl sm:text-3xl text-white p-3 bg-[#FE704B] rounded-md">
+            <IoCall />
+          </div>
+          <div>
+            <h4 className="text-lg sm:text-xl font-medium text-[#1f2022]">Contact Number</h4>
+            <p className="text-sm sm:text-base text-[#1f2022]">(+1) 517 397 7100</p>
+          </div>
+        </div>
+
+        <div className="flex items-start space-x-4 bg-white p-4 sm:p-5 shadow-sm rounded-md">
+          <div className="text-2xl sm:text-3xl text-white p-3 bg-[#FE704B] rounded-md">
+            <IoMail />
+          </div>
+          <div>
+            <h4 className="text-lg sm:text-xl font-medium text-[#1f2022]">Email Us</h4>
+            <a href="mailto:example@gmail.com" className="text-sm sm:text-base text-[#1f2022]">
+              example@gmail.com
+            </a>
           </div>
         </div>
       </div>
-    </section>
+
+      {/* Contact Form */}
+      <div className="lg:col-span-7">
+        <div className="p-6 sm:p-8 rounded-lg shadow-md bg-[#fdf7ee] border border-[#e0d7cd]">
+          <h2 className="text-[#1f2022] text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-6 border-b border-b-[#1f202234] inline-block pb-3">
+            Get A Quote
+          </h2>
+
+          <form
+            className="space-y-4"
+            name="enq"
+            method="post"
+            action="contact.php"
+            onSubmit={() => validation()}
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="name"
+                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="text"
+                name="mobile"
+                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+                placeholder="Mobile"
+                required
+              />
+              <input
+                type="text"
+                name="company"
+                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+                placeholder="Company"
+                required
+              />
+            </div>
+
+            <textarea
+              rows="6"
+              name="message"
+              className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              className="inline-block w-full sm:w-auto px-6 py-3 bg-[#FE704B] text-white rounded-md font-semibold text-[1rem] hover:bg-[#1f2022] hover:text-[#FFF3EF] transition duration-300 ease-in-out"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   );
 };
 
