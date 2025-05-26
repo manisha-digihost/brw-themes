@@ -9,14 +9,10 @@ const Header9 = () => {
   };
 
   return (
-    <nav className="bg-[#FFF3EF]">
-      <div className="px-4 md:px-[10rem] py-7">
-        <div className="flex justify-between items-center">
-          <div className="logo">
-            <Link to="/">
-              <h2 className="text-[#1f2022] font-semibold text-[2rem]">Haldaa</h2>
-            </Link>
-          </div>
+    <nav className="bg-[#ffffff]">
+      <div className="px-4 md:px-[2rem] py-7">
+        <div className="flex items-center flex-wrap">
+         
 
           {/* Hamburger Menu Button */}
           <button 
@@ -29,18 +25,25 @@ const Header9 = () => {
           </button>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-10 text-[#1f2022] font-semibold text-[1rem]">
-            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out"><a href="#!">Home</a></li>
-            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out"><a href="#!">About</a></li>
-            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out"><a href="#!">Services</a></li>
-            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out"><a href="#!">Gallery</a></li>
-            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out"><a href="#!">Contact</a></li>
-            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out">
-              <a href="#!" className="btn px-8 py-3 bg-[#FE704B] text-white rounded-md font-semibold text-[1rem] hover:bg-[#1f2022] hover:text-[#FFF3EF] transition duration-300 ease-in-out">
+          <ul className="hidden md:flex flex-1 gap-10 text-[#1f2022] font-semibold text-[1rem] ">
+            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out font-normal"><a href="#!">Home</a></li>
+            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out font-normal"><a href="#!">About</a></li>
+            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out font-normal"><a href="#!">Services</a></li>
+            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out font-normal"><a href="#!">Gallery</a></li>
+            <li className="hover:text-[#FE704B] transition duration-300 ease-in-out font-normal"><a href="#!">Contact</a></li>
+           
+          </ul>
+           <div className="logo">
+            <Link to="/">
+              <h2 className="text-[#1f2022] font-normal text-[2rem]">DARION</h2>
+            </Link>
+          </div>
+          <div className="flex-1 text-end">
+            <a href="#!" className="btn px-5 py-2 border border-dark hover:bg-[#fff] font-normal text-black rounded-[20px] f text-[1rem]  transition duration-300 ease-in-out">
                 Register Now
               </a>
-            </li>
-          </ul>
+          </div>
+          
         </div>
 
         {/* Mobile Menu */}
@@ -52,7 +55,7 @@ const Header9 = () => {
             <li className="hover:text-[#FE704B] transition duration-300 ease-in-out"><a href="#!">Gallery</a></li>
             <li className="hover:text-[#FE704B] transition duration-300 ease-in-out"><a href="#!">Contact</a></li>
             <li className="hover:text-[#FE704B] transition duration-300 ease-in-out">
-              <a href="#!" className="inline-block px-8 py-3 bg-[#FE704B] text-white rounded-md font-semibold text-[1rem] hover:bg-[#1f2022] hover:text-[#FFF3EF] transition duration-300 ease-in-out">
+            <a href="#!" className="btn px-5 py-2 border border-dark hover:bg-[#fff] font-normal text-black rounded-[20px] f text-[1rem]  transition duration-300 ease-in-out">
                 Register Now
               </a>
             </li>

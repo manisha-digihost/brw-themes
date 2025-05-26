@@ -3,22 +3,15 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const About9 = () => {
   return (
-    <section className="py-20 px-16 bg-[#fdf7ee]">
+    <section className="md:px-[2rem] px-16 py-10 bg-[#fff]">
       <div className=" mx-auto">
         <div className="flex flex-wrap">
-          <div className="w-full lg:w-5/12">
-            <div className="pr-0 lg:pr-10 mb-8 lg:mb-0 w-100" >
-              <div className="relative w-100 ">
-                  <figure className="w-100">
-                    <img className="w-100" src="	https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/about/02.png" alt="" />
-                  </figure>
-              </div>
-            </div>
-          </div>
-          <div className="w-full lg:w-7/12">
+        
+          <div className="w-full lg:w-6/12">
             <div className="mb-9 mt-7">
-              <span className="text-lg text-[#FE704B] ">About Haldaa</span>
-              <h2 className="text-4xl text-[#0B2239] font-600 mb-2">We Love <strong>to Take Care</strong> of Your Pets</h2>
+              <span className="text-sm text-[#000] mb-6 block">ENLIGHTEN YOUR HOME</span>
+              <h2 className="text-4xl text-[#0B2239] font-600 mb-2">Luminous Living: Innovative
+Lighting Designs</h2>
             </div>
             <div className="mb-6">
               <p className="text-[#555555] mb-4 text-[16px] font-400">
@@ -64,6 +57,15 @@ const About9 = () => {
                       </div>
 
                     </div>
+          </div>
+            <div className="w-full lg:w-6/12">
+            <div className="pr-0 lg:pl-10 mb-8 lg:mb-0 w-100" >
+              <div className="relative w-100 ">
+                  <figure className="w-100 ">
+                    <img className="w-100 rounded-[20px]" src="https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-17.jpg?v=1721791519" alt="" />
+                  </figure>
+              </div>
+            </div>
           </div>
         </div>
       </div>
