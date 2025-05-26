@@ -21,7 +21,7 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
-const Testimonials8 = () => {
+const Testimonials9 = () => {
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
@@ -202,4 +202,4 @@ const Testimonials8 = () => {
   );
 };
 
-export default Testimonials8;
+export default Testimonials9;
