@@ -25,178 +25,127 @@ const Testimonials9 = () => {
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <section className="py-20 px-16 bg-[#fdf7ee]">
+    <section className="py-20 px-16 bg-[#fff]">
       <div className="container-fluid mx-auto">
-        <div className="text-center">
-              <span className="text-lg text-[#FE704B] ">Testimonial</span>
-              <h2 className="text-4xl text-[#0B2239] font-600 mb-2">Our Customer Said<strong> About Pet Care</strong></h2>
-              <p className="text-[#555555]">Conveniently customize proactive services leveraged without <br /> continualliery aggregate fricctionle ou wellies</p>
-            </div>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 1,
-              spaceBetween: 50,
-            },
-          }}
-          // modules={[Pagination]}
-          className="mySwiper mt-8" >
-          <SwiperSlide className="relative p-8 border border-[#fff3]">
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8">
-              <div className="">
-                <figure>
-                  <img src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/03.jpg" alt="" />
-                </figure>
-              </div>
-              <div className="flex flex-col justify-center">
-                <div className=" gap-5 mb-3 ">
-                  <div className=" w-[60px] h-[60px]">
-                    <img
-                      src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/quote2.png"
-                      alt="Person"
-                    />
-                  </div>
-                
+       
+           <h2 className="text-[30px] leading-[35px] font-bold text-black">Testimonial</h2>
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8">
+          <div className="">
+              <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              // pagination={{
+              //   clickable: true,
+              // }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 1,
+                  spaceBetween: 50,
+                },
+              }}
+              // modules={[Pagination]}
+              className="mySwiper mt-8" >
+              <SwiperSlide className="relative p-8 border border-[#fff3]">
+             
+                 
+                  <div className="flex flex-col relative justify-center">
+                    <div className="absolute top-[5px] left-[-32px]">
+                      <div className=" w-[35px] h-[35px]">
+                        <img
+                          src="https://wpbingo-darion.myshopify.com/cdn/shop/files/quote.svg?v=1721704816"
+                          alt="Person"
+                        />
+                      </div>
+                    </div>
+                    <div className="card lg:p-2  md:p-1 p-1">
+                      <p className="text-[#000] text-[18px] 	leading-loose">
+                      Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
+                      </p>
+                    </div>
+                    <div className="flex gap-2 mt-5">
+                        <h4 className="text-[#000] text-[20px] font-[600] mb-1">John Abraham        <h5 className="text-[#000] inline ml-2 text-[16px] font-normal uppercase">
+                          CEO & Founder
+                        </h5></h4>
+                    </div>
                   </div>
             
+              
+              </SwiperSlide>
+              <SwiperSlide className="relative p-8 border border-[#fff3]">
              
-
-                <div className="card lg:p-2  md:p-1 p-1">
-                  <p className="text-[#555555] text-[16px]">
-                  Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
-                  </p>
-                </div>
-                <div className="flex gap-2 mt-5">
-                  <div className=" w-[60px] h-[60px]">
-                    <img
-                      src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                      alt="Person"
-                    />
-                  </div>
-                  <div className="">
-
-                    <h4 className="text-[#0B2239] text-[20px] font-[600] mb-1">John Abraham</h4>
-                    <h5 className="text-[#555555] uppercase">
-                      patient of <span className="text-[#fff]">surgery</span>
-                    </h5>
-                    
-                  </div>
-                </div>
-                
                  
-              </div>
-            </div>
-          
-          </SwiperSlide>
-          <SwiperSlide className="relative p-8 border border-[#fff3]">
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8">
-              <div className="">
-                <figure>
-                  <img src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/03.jpg" alt="" />
-                </figure>
-              </div>
-              <div className="flex flex-col justify-center">
-                <div className=" gap-5 mb-3 ">
-                  <div className=" w-[60px] h-[60px]">
-                    <img
-                      src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/quote2.png"
-                      alt="Person"
-                    />
-                  </div>
-                
+                  <div className="flex flex-col relative justify-center">
+                    <div className="absolute top-[5px] left-[-32px]">
+                      <div className=" w-[35px] h-[35px]">
+                        <img
+                          src="https://wpbingo-darion.myshopify.com/cdn/shop/files/quote.svg?v=1721704816"
+                          alt="Person"
+                        />
+                      </div>
+                    </div>
+                    <div className="card lg:p-2  md:p-1 p-1">
+                      <p className="text-[#000] text-[18px] 	leading-loose">
+                      Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
+                      </p>
+                    </div>
+                    <div className="flex gap-2 mt-5">
+                        <h4 className="text-[#000] text-[20px] font-[600] mb-1">John Abraham        <h5 className="text-[#000] inline ml-2 text-[16px] font-normal uppercase">
+                          CEO & Founder
+                        </h5></h4>
+                    </div>
                   </div>
             
+              
+              </SwiperSlide>
+              <SwiperSlide className="relative p-8 border border-[#fff3]">
              
-
-                <div className="card lg:p-2  md:p-1 p-1">
-                  <p className="text-[#555555] text-[16px]">
-                  Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
-                  </p>
-                </div>
-                <div className="flex gap-2 mt-5">
-                  <div className=" w-[60px] h-[60px]">
-                    <img
-                      src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                      alt="Person"
-                    />
-                  </div>
-                  <div className="">
-
-                    <h4 className="text-[#0B2239] text-[20px] font-[600] mb-1">John Abraham</h4>
-                    <h5 className="text-[#555555] uppercase">
-                      patient of <span className="text-[#fff]">surgery</span>
-                    </h5>
-                    
-                  </div>
-                </div>
-                
                  
-              </div>
-            </div>
-          
-          </SwiperSlide>
-          <SwiperSlide className="relative p-8 border border-[#fff3]">
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8">
-              <div className="">
-                <figure>
-                  <img src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/03.jpg" alt="" />
-                </figure>
-              </div>
-              <div className="flex flex-col justify-center">
-                <div className=" gap-5 mb-3 ">
-                  <div className=" w-[60px] h-[60px]">
-                    <img
-                      src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/testimonial/quote2.png"
-                      alt="Person"
-                    />
-                  </div>
-                
+                  <div className="flex flex-col relative justify-center">
+                    <div className="absolute top-[5px] left-[-32px]">
+                      <div className=" w-[35px] h-[35px]">
+                        <img
+                          src="https://wpbingo-darion.myshopify.com/cdn/shop/files/quote.svg?v=1721704816"
+                          alt="Person"
+                        />
+                      </div>
+                    </div>
+                    <div className="card lg:p-2  md:p-1 p-1">
+                      <p className="text-[#000] text-[18px] 	leading-loose">
+                      Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
+                      </p>
+                    </div>
+                    <div className="flex gap-2 mt-5">
+                        <h4 className="text-[#000] text-[20px] font-[600] mb-1">John Abraham        <h5 className="text-[#000] inline ml-2 text-[16px] font-normal uppercase">
+                          CEO & Founder
+                        </h5></h4>
+                    </div>
                   </div>
             
+              
+              </SwiperSlide>
              
-
-                <div className="card lg:p-2  md:p-1 p-1">
-                  <p className="text-[#555555] text-[16px]">
-                  Continually productize compelling quality for packed with  elated productize compelling quality for packed in  with all elated Them Continually productize compelling  quality for packed with  elated productize compelling quality for packed in  with all elated Them Setting up to website and creating
-                  </p>
-                </div>
-                <div className="flex gap-2 mt-5">
-                  <div className=" w-[60px] h-[60px]">
-                    <img
-                      src="https://validthemes.net/site-template/medihub/assets/img/team/7.jpg"
-                      alt="Person"
-                    />
-                  </div>
-                  <div className="">
-
-                    <h4 className="text-[#0B2239] text-[20px] font-[600] mb-1">John Abraham</h4>
-                    <h5 className="text-[#555555] uppercase">
-                      patient of <span className="text-[#fff]">surgery</span>
-                    </h5>
-                    
-                  </div>
-                </div>
-                
-                 
+          
+          </Swiper>
+          </div>
+          <div className="">
+            <div className="pr-0 lg:pl-10 mb-8 lg:mb-0 w-100 h-100" >
+              <div className="relative w-100 h-100">
+                  <figure className="w-100 h-100">
+                    <img className="w-100 h-100 object-cover rounded-[20px]" src="https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-16.jpg?v=1721717190" alt="" />
+                  </figure>
               </div>
             </div>
-          
-          </SwiperSlide>
-         
-        </Swiper>
+          </div>
+        </div>
+        
       </div>
     </section>
   );

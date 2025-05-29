@@ -42,9 +42,9 @@ const Hero9 = () => {
         modules={[Navigation, Pagination, Autoplay]}
         // navigation
         // pagination={{ clickable: true }}
-        // autoplay={{ delay: 5000 }}
-        autoplay={false}
-        loop={false}
+        autoplay={{ delay: 5000 }}
+        // autoplay={false}
+        loop={true}
         className="h-full"
       >
         {slides.map((slide, index) => (
@@ -64,7 +64,7 @@ const Hero9 = () => {
                   {slide.title}
                 </h1>
                 <a href="#!" className="btn px-5 py-2 border hover:text-dark border-white hover:bg-[#fff] font-normal text-white rounded-[20px] f text-[1rem]  transition duration-300 ease-in-out">
-                Register Now
+               { slide.buttonText}
               </a>
                     </div>
                   </div>

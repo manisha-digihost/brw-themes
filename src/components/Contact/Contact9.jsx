@@ -11,57 +11,19 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Contact9 = () => {
   return (
- <section id="contact" className="bg-[#fdf7ee] py-12 sm:py-16 lg:py-20">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-10">
+ <section id="contact" className="bg-[#fff] px-4 md:px-[2rem] py-7">
+  <div className="container mx-auto ">
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
       
       {/* Contact Info */}
-      <div className="lg:col-span-5 space-y-8 bg-[#fdf7ee] py-10 sm:py-12 px-6 sm:px-10 rounded-[12px] border border-[#e0d7cd]">
-        <h2 className="text-[#1f2022] text-2xl sm:text-3xl font-bold uppercase mb-6 border-b border-[#1f202234] pb-3">
-          Contact Information
-        </h2>
-
-        <div className="flex items-start space-x-4 bg-white p-4 sm:p-5 shadow-sm rounded-md">
-          <div className="text-2xl sm:text-3xl text-white p-3 bg-[#FE704B] rounded-md">
-            <IoLocationSharp />
-          </div>
-          <div>
-            <h4 className="text-lg sm:text-xl font-medium text-[#1f2022]">Address</h4>
-            <p className="text-sm sm:text-base text-[#1f2022]">
-              3481 Melrose Place, Beverly Hills
-            </p>
-          </div>
-        </div>
-
-        <div className="flex items-start space-x-4 bg-white p-4 sm:p-5 shadow-sm rounded-md">
-          <div className="text-2xl sm:text-3xl text-white p-3 bg-[#FE704B] rounded-md">
-            <IoCall />
-          </div>
-          <div>
-            <h4 className="text-lg sm:text-xl font-medium text-[#1f2022]">Contact Number</h4>
-            <p className="text-sm sm:text-base text-[#1f2022]">(+1) 517 397 7100</p>
-          </div>
-        </div>
-
-        <div className="flex items-start space-x-4 bg-white p-4 sm:p-5 shadow-sm rounded-md">
-          <div className="text-2xl sm:text-3xl text-white p-3 bg-[#FE704B] rounded-md">
-            <IoMail />
-          </div>
-          <div>
-            <h4 className="text-lg sm:text-xl font-medium text-[#1f2022]">Email Us</h4>
-            <a href="mailto:example@gmail.com" className="text-sm sm:text-base text-[#1f2022]">
-              example@gmail.com
-            </a>
-          </div>
-        </div>
+      <div className="lg:col-span-5 space-y-8 bg-[#fdf7ee]  rounded-[12px] ">
+        <img src="https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-1.jpg?v=1721030981" alt="" />
       </div>
 
       {/* Contact Form */}
       <div className="lg:col-span-7">
-        <div className="p-6 sm:p-8 rounded-lg shadow-md bg-[#fdf7ee] border border-[#e0d7cd]">
-          <h2 className="text-[#1f2022] text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-6 border-b border-b-[#1f202234] inline-block pb-3">
-            Get A Quote
-          </h2>
+        <div className="p-6 sm:p-8 ">
+         <h2 className="text-[30px] leading-[35px] font-bold mb-5 text-black">Contact Us</h2>
 
           <form
             className="space-y-4"
@@ -74,28 +36,28 @@ const Contact9 = () => {
               <input
                 type="text"
                 name="name"
-                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#000] placeholder:text-black bg-white border border-[#000]"
                 placeholder="Your Name"
                 required
               />
               <input
                 type="email"
                 name="email"
-                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#000] placeholder:text-black bg-white border border-[#000]"
                 placeholder="Your Email"
                 required
               />
               <input
                 type="text"
                 name="mobile"
-                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#000] placeholder:text-black bg-white border border-[#000]"
                 placeholder="Mobile"
                 required
               />
               <input
                 type="text"
                 name="company"
-                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+                className="w-full px-4 py-3 rounded-md focus:outline-none text-[#000] placeholder:text-black bg-white border border-[#000]"
                 placeholder="Company"
                 required
               />
@@ -104,17 +66,12 @@ const Contact9 = () => {
             <textarea
               rows="6"
               name="message"
-              className="w-full px-4 py-3 rounded-md focus:outline-none text-[#1f2022] bg-white border border-[#ddd]"
+              className="w-full px-4 py-3 rounded-md focus:outline-none text-[#000] placeholder:text-black bg-white border border-[#000]"
               placeholder="Message"
               required
             ></textarea>
 
-            <button
-              type="submit"
-              className="inline-block w-full sm:w-auto px-6 py-3 bg-[#FE704B] text-white rounded-md font-semibold text-[1rem] hover:bg-[#1f2022] hover:text-[#FFF3EF] transition duration-300 ease-in-out"
-            >
-              Submit
-            </button>
+           <a href="#!" class="btn px-5 mt-3 block w-fit py-2 border bg-dark hover:text-dark border-dark hover:bg-[#fff] font-normal text-white rounded-[20px] f text-[1rem]  transition duration-300 ease-in-out">Submit</a>
           </form>
         </div>
       </div>

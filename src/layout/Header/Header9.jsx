@@ -11,13 +11,13 @@ const Header9 = () => {
   return (
     <nav className="bg-[#ffffff]">
       <div className="px-4 md:px-[2rem] py-7">
-        <div className="flex items-center flex-wrap">
+        <div className="flex items-center flex-wrap md:justify-start justify-between ">
          
 
           {/* Hamburger Menu Button */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden flex flex-col space-y-1.5"
+            className="md:hidden  flex flex-col space-y-1.5"
           >
             <span className={`block w-6 h-0.5 bg-[#1f2022] transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
             <span className={`block w-6 h-0.5 bg-[#1f2022] transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
@@ -33,13 +33,13 @@ const Header9 = () => {
             <li className="hover:text-[#FE704B] transition duration-300 ease-in-out font-normal"><a href="#!">Contact</a></li>
            
           </ul>
-           <div className="logo">
+           <div className="logo ">
             <Link to="/">
               <h2 className="text-[#1f2022] font-normal text-[2rem]">DARION</h2>
             </Link>
           </div>
-          <div className="flex-1 text-end">
-            <a href="#!" className="btn px-5 py-2 border border-dark hover:bg-[#fff] font-normal text-black rounded-[20px] f text-[1rem]  transition duration-300 ease-in-out">
+          <div className="flex-1 text-end md:flex hidden justify-end items-center gap-4">
+            <a href="#!" className="btn md:block w-fit  hidden px-5 py-2 border border-dark hover:bg-[#fff] font-normal text-black rounded-[20px] f text-[1rem]  transition duration-300 ease-in-out">
                 Register Now
               </a>
           </div>

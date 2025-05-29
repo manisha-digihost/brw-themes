@@ -3,66 +3,34 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const About9 = () => {
   return (
-    <section className="md:px-[2rem] px-16 py-10 bg-[#fff]">
+    <section className="md:px-[2rem] md:px-16 px-5 py-10 bg-[#fff]">
       <div className=" mx-auto">
         <div className="flex flex-wrap">
         
-          <div className="w-full lg:w-6/12">
+          <div className="w-full lg:w-6/12 lg:p-20">
             <div className="mb-9 mt-7">
               <span className="text-sm text-[#000] mb-6 block">ENLIGHTEN YOUR HOME</span>
               <h2 className="text-4xl text-[#0B2239] font-600 mb-2">Luminous Living: Innovative
-Lighting Designs</h2>
+                Lighting Designs</h2>
             </div>
             <div className="mb-6">
-              <p className="text-[#555555] mb-4 text-[16px] font-400">
-              We are proud to offer top range of comprehensive employment services such asser payroll and benefits administration, management, and assistance with global business range employment employer.
+              <p className="text-[#555555] mb-8 text-[16px] font-400">
+                Most of the style’s furniture has a touch of modern European
+                furniture with a simple design to create harmony with the dark
+                interior design…
               </p>
-              <p className="text-[#555555] mb-4 text-[16px] font-400">Through our cognition-based coaching and consulting racapproach we creative facilitate your business growth from small to midsize from meid size to global business or from crisis to success.</p>
+                 <a href="#!" className="btn px-5 py-2 border bg-dark hover:text-dark border-dark hover:bg-[#fff] font-normal text-white rounded-[20px] f text-[1rem]  transition duration-300 ease-in-out">
+                Shop Now
+              </a>
+         
             </div>
-                <div className="grid md:grid-cols-2 gap-0">
-                   
-            
-                      {/* Second Card */}
-                      <div className="p-3 group inline-flex items-center gap-5 text-left rounded-br-xl overflow-hidden">
-                          <div className="group-hover:bg-[#] transition-all p-1  shadow-lg shadow-500/50 rounded-[10px]">
-                            <figure className=" h-[60px] w-[60px]" >
-
-                                <img  className="transition-transform duration-500 group-hover:[transform:rotateY(360deg)]" src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/about/icon/01.png" alt="" />
-                            </figure>
-                          
-                          </div>
-                        <div>
-                          <h4 className="text-[#0B2239] font-bold mb-2 text-[18px]">14+ Years Experience</h4>
-                          <p className="text-[#555555] text-[15px] font-sm">Strategy experience and an lytical expertise.</p>
-                        </div>
-                      </div>
-            
-                      {/* Third Card */}
-                      <div className="p-3 group inline-flex items-center gap-5 text-left rounded-br-xl overflow-hidden">
-                        <div className="transition-all p-1 shadow-lg shadow-500/50 rounded-[10px]">
-                          <figure className="h-[60px] w-[60px]">
-                            <img
-                              src="https://demos.codexcoder.com/labartisan/html/haldaa-demo/haldaa/assets/images/about/icon/02.png"
-                              alt=""
-                              className="transition-transform duration-500 group-hover:[transform:rotateY(360deg)]"
-                            />
-                          </figure>
-                        </div>
-                        <div>
-                          <h4 className="text-[#0B2239] font-bold mb-2 text-[18px]">Certified Groomer</h4>
-                          <p className="text-[#555555] text-[15px] font-sm">
-                            Strategy experience and analytical expertise.
-                          </p>
-                        </div>
-                      </div>
-
-                    </div>
+                
           </div>
             <div className="w-full lg:w-6/12">
-            <div className="pr-0 lg:pl-10 mb-8 lg:mb-0 w-100" >
-              <div className="relative w-100 ">
-                  <figure className="w-100 ">
-                    <img className="w-100 rounded-[20px]" src="https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-17.jpg?v=1721791519" alt="" />
+            <div className="pr-0 lg:pl-10 mb-8 lg:mb-0 w-100 h-100" >
+              <div className="relative w-100 h-100">
+                  <figure className="w-100 h-100">
+                    <img className="w-100 h-100 object-cover rounded-[20px]" src="https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-17.jpg?v=1721791519" alt="" />
                   </figure>
               </div>
             </div>
